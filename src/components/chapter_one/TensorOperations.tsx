@@ -1,15 +1,15 @@
 import { Box } from '@chakra-ui/react'
-import chapterOne from '../../data/chapterOne'
 import BaseGrid from '../BaseGrid'
 import pythonCode from '../../data/codeTensors'
 import CodeDisplay from '../CodeDisplay'
 import LeftGrid from '../LeftGrid'
 import RightGrid from '../RightGrid'
+import chapterOne_ch from '../../data/chapterOne_ch'
 
 const TensorOperations = () => {
   const [ 
     operations, addSub, matmul, mmWork, twoRule, mmWebs, dot,  dotTransf, aggre
-  ] = chapterOne[3].sections
+  ] = chapterOne_ch[3].sections
   const [ 
     addSubCode, matmulCode, aggreCode 
   ] = pythonCode.slice(6, 9).map(obj => obj.code)

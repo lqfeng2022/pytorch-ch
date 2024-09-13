@@ -1,13 +1,13 @@
 import { Container, Divider, Flex, Heading, Text } from '@chakra-ui/react'
 import FootLinks from '../components/FootLinks'
 import IntroduceGrid from '../components/IntroduceGrid'
-import introduce from '../data/introduce'
-import sectionList from '../data/sectionList'
+import introduce_ch from '../data/introduce_ch'
+import sectionList_ch from '../data/sectionList_ch'
 
 const Introduction = () => {
   const [ 
-    intro, story, contents, ai, tensor, models, maths ] = introduce.slice(0, 7)
-  const { name: r, link: rl } = sectionList[1]
+    intro, story, contents, ai, tensor, models, maths ] = introduce_ch.slice(0, 7)
+  const { name: r, link: rl } = sectionList_ch[1]
 
   return (
     <Container maxW='1200px' px='10px'>
@@ -24,7 +24,7 @@ const Introduction = () => {
       <Flex align='center' h='80px'>
         <Divider variant='thick'/>
       </Flex>
-      <FootLinks l={'Book Cover'} ll={'/'} r={r} rl={rl}/>
+      <FootLinks l={'封面'} ll={'/'} r={r} rl={rl}/>
     </Container>
   )
 } 

@@ -1,4 +1,4 @@
-import chapterOne from '../../data/chapterOne'
+import chapterOne_ch from '../../data/chapterOne_ch'
 import pythonCode from '../../data/codeTensors'
 import BaseGrid from '../BaseGrid'
 import CodeDisplay from '../CodeDisplay'
@@ -6,9 +6,8 @@ import Definition from '../Definition'
 import LeftGrid from '../LeftGrid'
 
 const TensorRun = () => {
-  const [ 
-    ongpu, rungpu, gpu, gpuf, cuda, cudaf, getgpu
-  ] = chapterOne[7].sections
+  const [ ongpu, rungpu, gpu, gpuf, cuda, cudaf, getgpu
+  ] = chapterOne_ch[7].sections
   const tensorrunCode = pythonCode[22].code
   
   return (

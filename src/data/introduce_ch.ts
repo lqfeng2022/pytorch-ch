@@ -129,7 +129,7 @@ export default [
     ]
   },
   { id: 7,
-    name: "关于形状",
+    name: "说说形状",
     value: "",
     image: "",
     content: [

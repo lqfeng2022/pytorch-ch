@@ -1,15 +1,15 @@
 import { Container, Divider, Flex } from '@chakra-ui/react'
+import ChapterListTwo from '../components/ChapterListTwo'
 import FootLinks from '../components/FootLinks'
 import Header from '../components/Header'
-import covers from '../data/covers'
-import sectionList from '../data/sectionList'
-import ChapterListTwo from '../components/ChapterListTwo'
+import covers_ch from '../data/covers_ch'
+import sectionList_ch from '../data/sectionList_ch'
 
 const ChapterNine = () => {
-  const cover = covers[9]
-  const { name: l, link: ll } = sectionList[9]
-  const { name: r, link: rl } = sectionList[11]
-  const { description: descript, items: lists } = sectionList[10]
+  const cover = covers_ch[9]
+  const { name: l, link: ll } = sectionList_ch[9]
+  const { name: r, link: rl } = sectionList_ch[11]
+  const { description: descript, items: lists } = sectionList_ch[10]
   const leftItems = lists.slice(0, 7)
   const rightItems = lists.slice(-6)
   

@@ -7,10 +7,9 @@ interface Reference {
   name: string,
   values: ReferLinks[],
 }
-
 const ReferGrid = ({ section }: { section: Reference }) => {
   return (
-    <Box pt={5}>
+    <Box pt={3}>
       <Text as='b' fontSize='lg' color='gray.600'>
         {section.name}
       </Text>

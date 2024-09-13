@@ -1,9 +1,9 @@
-import chapterFive from '../../data/chapterFive'
 import Definition from '../Definition'
 import BaseGrid from '../BaseGrid'
+import chapterFive_ch from '../../data/chapterFive_ch'
 
 const Backpropagation = () => {
-  const [ defin, implem, calcul ] = chapterFive[4].sections
+  const [ defin, implem, calcul ] = chapterFive_ch[4].sections
 
   return (
     <div>

@@ -25,7 +25,7 @@ const NavBar = () => {
             AI &nbsp;WITH &nbsp;PYTORCH
           </Text>
         </Link>
-        <Text as='b' fontSize='xl' color='gray.500'>SIMON LEE</Text>
+        <Text as='b' fontSize='xl' color='gray.500' fontWeight='light'>李 形状</Text>
       </HStack>
     </Container>
   );

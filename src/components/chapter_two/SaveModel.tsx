@@ -1,13 +1,12 @@
-import Definition from '../Definition'
-import chapterTwo from '../../data/chapterTwo'
+import chapterTwo_ch from '../../data/chapterTwo_ch'
 import codeLineModel from '../../data/codeLineModel'
 import CodeDisplay from '../CodeDisplay'
-import BaseGrid from '../BaseGrid'
+import Definition from '../Definition'
 import LeftGrid from '../LeftGrid'
 import RightGrid from '../RightGrid'
 
 const SaveModel = () => {
-  const [ define, save, load ] = chapterTwo[4].sections
+  const [ define, save, load ] = chapterTwo_ch[4].sections
   const [ savecode, loadcode ] = codeLineModel.slice(9, 11).map(obj => obj.code)
 
   return (

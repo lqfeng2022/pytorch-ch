@@ -1,9 +1,9 @@
 import Definition from '../Definition'
-import chapterThree from '../../data/chapterThree'
 import BaseGrid from '../BaseGrid'
+import chapterThree_ch from '../../data/chapterThree_ch'
 
 const NormalDistribution = () => {
-  const [ whats, pdf, cdf ]= chapterThree[1].sections
+  const [ whats, pdf, cdf ]= chapterThree_ch[1].sections
 
   return (
     <div>

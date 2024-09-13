@@ -1,11 +1,10 @@
 import Definition from '../Definition'
-import chapterThree from '../../data/chapterThree'
 import BaseGrid from '../BaseGrid'
+import chapterThree_ch from '../../data/chapterThree_ch'
 
 const LossCurves = () => {
-  const [ 
-    whats, mse, mse_model, mse_detail, curve, curves 
-  ] = chapterThree[2].sections
+  const [ whats, mse, mse_model, mse_detail, curve, curves 
+  ] = chapterThree_ch[2].sections
 
   return (
     <div>

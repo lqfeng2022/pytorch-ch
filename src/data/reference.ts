@@ -1,7 +1,7 @@
 export default [
   // Paper reference:
   { id: 1,
-    name: "Papers",
+    name: "论文参考:",
     values: [
       { id: 1,
         title: "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
@@ -243,7 +243,7 @@ export default [
   },
   // Webs and tools:
   { id: 6, 
-    name: "Webs and Tools",
+    name: "学习网站和工具:",
     values: [
       { id: 1,
         title: "CNN Explainer, shared by Polo Club of Data Science",

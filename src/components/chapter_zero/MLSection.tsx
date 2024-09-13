@@ -4,13 +4,14 @@ import Definition from '../Definition';
 import LeftGrid from '../LeftGrid';
 import RightGrid from '../RightGrid';
 import chapterZero from '../../data/chapterZero';
+import chapterZero_ch from '../../data/chapterZero_ch';
 
 const MLSection = () => {
   const models = {
     title: "2.2 Models in Machine Learning",
     value: "A machine learning model is basically a mathematical model that can make predictions or classifications on new data after it's been TRAINED on a dataset. There are many different types of models used in machine learning. Here, I'm gonna briefly introduce three of them for reference."
   }
-  const [whats, compare, svms, detree, anns] = chapterZero[1].sections
+  const [whats, compare, svms, detree, anns] = chapterZero_ch[1].sections
 
   return (
     <>

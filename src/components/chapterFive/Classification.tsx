@@ -1,13 +1,12 @@
-import chapterFive from '../../data/chapterFive'
+import chapterFive_ch from '../../data/chapterFive_ch'
 import BaseGrid from '../BaseGrid'
 import Definition from '../Definition'
 import LeftGrid from '../LeftGrid'
 import RightGrid from '../RightGrid'
 
 const BinaryClassification = () => {
-  const [ 
-    defin, classific, bClassific, binaryLinear, binaryNonlinear 
-  ] = chapterFive[0].sections
+  const [ defin, classific, bClassific, binaryLinear, binaryNonlinear 
+  ] = chapterFive_ch[0].sections
 
   return (
     <div>

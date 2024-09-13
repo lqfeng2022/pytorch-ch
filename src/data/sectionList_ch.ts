@@ -10,13 +10,13 @@ export default [
     link: "/artificial-intelligence",
     items: [
       { id: 1, name: "人工智能 (AI)", link: "artificial-intelligence" },
-      { id: 2, name: "机器学习", link: "machine-learing" },
-      { id: 3, name: "深度学习", link: "deep-learning"},
-      { id: 4, name: "神经网络", link: "neural-network" },
-      { id: 5, name: "框架和库", link: "libraries" },
+      { id: 2, name: "机器学习 (Machine Learning)", link: "machine-learing" },
+      { id: 3, name: "深度学习 (Deep Learning)", link: "deep-learning"},
+      { id: 4, name: "神经网络 (Neural Network)", link: "neural-network" },
+      { id: 5, name: "框架和库 (Libraries)", link: "libraries" },
       { id: 6, name: "PyTorch", link: "pytorch" },
-      { id: 7, name: "前期准备", link: "prerequisites" },
-      { id: 8, name: "如何学习这门课衬托", link: "how-to-take-course" },
+      { id: 7, name: "准备工作 (Prerequisites)", link: "prerequisites" },
+      { id: 8, name: "如何学习这门课程", link: "how-to-take-course" },
     ],
     description: [
       { id: 1, 
@@ -34,7 +34,7 @@ export default [
     ]
   },
   { id: 2, 
-    name: "1. TENSORs", 
+    name: "1. 张量 (TENSORs)", 
     link: "/tensors",
     items: [
       { id: 1, name: "张量?", link: "tensors" },
@@ -86,12 +86,12 @@ export default [
     name: "3. 模型背后的数学原理(I)", 
     link: "/the-maths-behind-one",
     items: [
-      { id: 1, name: "- 线性回归", link: "linear-regression" },
-      { id: 2, name: "- 正态分布", link: "normal-distribution" },
-      { id: 3, name: "- 损失函数: MSE", link: "loss-function" },
-      { id: 4, name: "- 梯度下降(GD)", link: "gradient-descent" },
-      { id: 5, name: "- 随机梯度下降(SGD)", link: "stochastic-gradient-descent" },
-      { id: 6, name: "- 学习率(lr)", link: "learning-rate" }
+      { id: 1, name: "线性回归", link: "linear-regression" },
+      { id: 2, name: "正态分布", link: "normal-distribution" },
+      { id: 3, name: "损失函数: MSE", link: "loss-function" },
+      { id: 4, name: "梯度下降 (GD)", link: "gradient-descent" },
+      { id: 5, name: "随机梯度下降 (SGD)", link: "stochastic-gradient-descent" },
+      { id: 6, name: "学习率 (lr)", link: "learning-rate" }
     ],
     description: [
       { id: 1, 
@@ -111,7 +111,7 @@ export default [
       { id: 1, name: "i. 准备数据", link: "prepare-data" },
       { id: 2, name: "ii. 构建模型", link: "build-a-model" },
       { id: 3, name: "iii. 训练模型", link: "train-a-model" },
-      { id: 4, name: "iv. 微调模型", link: "improve-a-model" },
+      { id: 4, name: "iv. 改进模型", link: "improve-a-model" },
       { id: 5, name: "v. 保存模型", link: "save-a-model" },
     ],
     description: [
@@ -125,11 +125,11 @@ export default [
     name: "5. 模型背后的数学原理 (II)", 
     link: "/the-maths-behind-two",
     items: [
-      { id: 1, name: "- 分类任务", link: "classification-task" },
-      { id: 2, name: "- 损失函数 (二元交叉熵 BCE)", link: "loss-function-bce" },
-      { id: 3, name: "- Sigmoid函数", link: "sigmoid-function" },
-      { id: 4, name: "- 反向传播算法", link: "backpropagation" },
-      { id: 5, name: "- 激活方程 (ReLU)", link: "activation-function-relu" }
+      { id: 1, name: "分类问题", link: "classification-task" },
+      { id: 2, name: "损失函数: 二元交叉熵 (BCE)", link: "loss-function-bce" },
+      { id: 3, name: "Sigmoid函数", link: "sigmoid-function" },
+      { id: 4, name: "反向传播算法", link: "backpropagation" },
+      { id: 5, name: "激活函数: ReLU", link: "activation-function-relu" }
     ],
     description: [
       { id: 1, 
@@ -139,14 +139,14 @@ export default [
     ]
   },
   { id: 7, 
-    name: "6. A CNN Model", 
+    name: "6. 一个 CNN 模型", 
     link: "/a-cnn-model",
     items: [
-      { id: 1, name: "i. Prepare Data", link: "prepare-data" },
-      { id: 2, name: "ii.Build a Model", link: "build-a-model" },
-      { id: 3, name: "iii.Train a Model", link: "train-a-model" },
-      { id: 4, name: "iv. Improve a Model", link: "improve-a-model" },
-      { id: 5, name: "v. Save a Model", link: "save-a-model" },
+      { id: 1, name: "i. 准备数据", link: "prepare-data" },
+      { id: 2, name: "ii. 构建模型", link: "build-a-model" },
+      { id: 3, name: "iii. 训练模型", link: "train-a-model" },
+      { id: 4, name: "iv. 模型优化", link: "improve-a-model" },
+      { id: 5, name: "v. 保存模型", link: "save-a-model" },
     ],
     description: [
       { id: 1, 
@@ -160,17 +160,17 @@ export default [
     ]
   },
   { id: 8, 
-    name: "7. The Maths Behind (III)", 
+    name: "7. 模型背后的数学原理 (III)", 
     link: "/the-maths-behind-three",
     items: [
-      { id: 1, name: "- Computer Vision", link: "computer-vision" },
-      { id: 2, name: "- Image Encoder", link: "image-encoder" },
-      { id: 3, name: "- MNIST Dataset", link: "mnist-dataset" },
-      { id: 4, name: "- DATALOADER", link: "dataloader" },
-      { id: 5, name: "- ARGMAX Function", link: "argmax-function" },
-      { id: 6, name: "- CNN", link: "cnn" },
-      { id: 7, name: "- MaxPooling Layer", link: "maxPooling-layer" },
-      { id: 8, name: "- SoftMax Function", link: "softMax-function" }
+      { id: 1, name: "计算机视觉", link: "computer-vision" },
+      { id: 2, name: "图片编码", link: "image-encoder" },
+      { id: 3, name: "MNIST 数据集", link: "mnist-dataset" },
+      { id: 4, name: "DATALOADER", link: "dataloader" },
+      { id: 5, name: "ARGMAX 函数", link: "argmax-function" },
+      { id: 6, name: "CNN: 卷积神经网络", link: "cnn" },
+      { id: 7, name: "MaxPooling 层", link: "maxPooling-layer" },
+      { id: 8, name: "SoftMax 函数", link: "softMax-function" }
     ],
     description: [
       { id: 1, 
@@ -184,14 +184,14 @@ export default [
     ]
   },
   { id: 9, 
-    name: "8. A Vision Transformer Model", 
+    name: "8. 一个视觉 Transformer 模型", 
     link: "/a-vit-model",
     items: [
-      { id: 1, name: "i. Prepare Data", link: "prepare-data" },
-      { id: 2, name: "ii. Build a Model", link: "build-da-model" },
-      { id: 3, name: "iii. Train a Model", link: "train-a-model" },
-      { id: 4, name: "iv. Improve a Model", link: "improve-a-model" },
-      { id: 5, name: "v. Save a Model", link: "save-a-model" },
+      { id: 1, name: "i. 准备数据", link: "prepare-data" },
+      { id: 2, name: "ii. 构建模型", link: "build-da-model" },
+      { id: 3, name: "iii. 训练模型", link: "train-a-model" },
+      { id: 4, name: "iv. 优化模型", link: "improve-a-model" },
+      { id: 5, name: "v. 保存模型", link: "save-a-model" },
     ],
     description: [
       { id: 1, 
@@ -205,22 +205,22 @@ export default [
     ]
   },
   { id: 10, 
-    name: "9. The Maths Behind (IV)", 
+    name: "9. 模型背后的数学 (IV)", 
     link: "/the-maths-behind-four",
     items: [
-      { id: 1, name: "- Vision Transformer", link: "vision-transformer" },
-      { id: 2, name: "- ViT Architecture", link: "vit-arhitecture" },
-      { id: 3, name: "- Patch Embedding", link: "patch-embedding" },
-      { id: 4, name: "-- Class Token Embedding", link: "class-token-embedding" },
-      { id: 5, name: "- Positional Embedding", link: "positional-embedding" },
-      { id: 6, name: "- Transformer Encoder", link: "transformer-encoder" },
-      { id: 7, name: "-- Multi-Head Attention (MHA)", link: "multi-head-self-attention" },
-      { id: 8, name: "-- Layer Normalization (LN)", link: "layer-normalization" },
-      { id: 9, name: "-- Residual Connection (+)", link: "residual-connection" },
-      { id: 10, name: "-- Multi-Layer Perceptron (MLP)", link: "multi-layer-perceptron" },
-      { id: 11, name: "-- Dropout Layer", link: "dropout-layer" },
-      { id: 12, name: "- Classifier", link: "classifier" },
-      { id: 13, name: "- GeLU Function", link: "activation-function" },
+      { id: 1, name: "Vision Transformer", link: "vision-transformer" },
+      { id: 2, name: "ViT 架构", link: "vit-arhitecture" },
+      { id: 3, name: "Patch Embedding", link: "patch-embedding" },
+      { id: 4, name: "- Class Token Embedding", link: "class-token-embedding" },
+      { id: 5, name: "位置编码", link: "positional-embedding" },
+      { id: 6, name: "Transformer 编码器", link: "transformer-encoder" },
+      { id: 7, name: "- 多头注意力机制 (MHA)", link: "multi-head-self-attention" },
+      { id: 8, name: "- 层正则化 (LN)", link: "layer-normalization" },
+      { id: 9, name: "- 残差连接 (+)", link: "residual-connection" },
+      { id: 10, name: "- 多层感知机 (MLP)", link: "multi-layer-perceptron" },
+      { id: 11, name: "- Dropout 层", link: "dropout-layer" },
+      { id: 12, name: "Classifier", link: "classifier" },
+      { id: 13, name: "GeLU 函数", link: "activation-function" },
     ],
     description: [
       { id: 1, 
@@ -234,14 +234,14 @@ export default [
     ]
   },
   { id: 11, 
-    name: "10. A Language Translation Model", 
+    name: "10. 一个自然语言翻译模型", 
     link: "/a-translation-model",
     items: [
-      { id: 1, name: "i. Prepare Data", link: "prepare-data" },
-      { id: 2, name: "ii. Build a Model", link: "build-a-model" },
-      { id: 3, name: "iii. Train a Model", link: "train-a-model" },
-      { id: 4, name: "iv. Improve a Model", link: "improve-a-model" },
-      { id: 5, name: "v. Save a Model", link: "save-a-model" },
+      { id: 1, name: "i. 准备数据", link: "prepare-data" },
+      { id: 2, name: "ii. 构建模型", link: "build-a-model" },
+      { id: 3, name: "iii. 训练模型", link: "train-a-model" },
+      { id: 4, name: "iv. 改进模型", link: "improve-a-model" },
+      { id: 5, name: "v. 保存模型", link: "save-a-model" },
     ],
     description: [
       { id: 1, 
@@ -255,16 +255,16 @@ export default [
     ]
   },
   { id: 12, 
-    name: "11. The Maths Behind (V)", 
+    name: "11. 模型背后的数学原理 (V)", 
     link: "/the-maths-behind-five",
     items: [
-      { id: 1, name: "- Word Embedding and Word2Vec", link: "word-embedding" },
-      { id: 2, name: "- Recurrent Neural Network (RNN)", link: "rnn"},
-      { id: 3, name: "- Long Short-Term Memory (LSTM)", link: "lstm"},
-      { id: 4, name: "- Transformer", link: "transformer" },
-      { id: 5, name: "-- Masked Multi-Head Attention", link: "masked-multi-head-attention" },
-      { id: 6, name: "-- Transformer Encoder", link: "transformer-encoder" },
-      { id: 7, name: "-- Transformer Decoder", link: "transformer-decoder" },
+      { id: 1, name: "Word 编码 和 Word2Vec", link: "word-embedding" },
+      { id: 2, name: "循环神经网络 (RNN)", link: "rnn"},
+      { id: 3, name: "LSTM 网络", link: "lstm"},
+      { id: 4, name: "Transformer", link: "transformer" },
+      { id: 5, name: "- Masked 注意力机制", link: "masked-multi-head-attention" },
+      { id: 6, name: "- Transformer 编码器", link: "transformer-encoder" },
+      { id: 7, name: "- Transformer 解码器", link: "transformer-decoder" },
     ],
     description: [
       { id: 1, 
@@ -278,13 +278,13 @@ export default [
     ]
   },
   { id: 13, 
-    name: "Reference", 
+    name: "参考资料", 
     link: "/reference", 
     items: [], 
     description: [] 
   },
   { id: 14, 
-    name: "About the Shape", 
+    name: "说说形状", 
     link: "/about-shape", 
     items: [],
     description: [] 

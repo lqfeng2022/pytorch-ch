@@ -1,13 +1,13 @@
 import Definition from '../Definition'
 import CodeDisplay from '../CodeDisplay'
 import BaseGrid from '../BaseGrid'
-import chapterFour from '../../data/chapterFour'
 import codeBinaryModel from '../../data/codeBinaryModel'
 import LeftGrid from '../LeftGrid'
 import RightGrid from '../RightGrid'
+import chapterFour_ch from '../../data/chapterFour_ch'
 
 const SaveModel = () => {
-  const [ define, choose, save, load ] = chapterFour[7].sections
+  const [ define, choose, save, load ] = chapterFour_ch[7].sections
   const [ code_choose, code_save, code_load 
   ] = codeBinaryModel.slice(16, 19).map(obj => obj.code)
 

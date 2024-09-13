@@ -10,15 +10,15 @@ import {
   Workflow
 } from '../components/chapter_two'
 import useScrollToHash from '../components/useScrollToHash'
-import covers from '../data/covers'
-import sectionList from '../data/sectionList'
+import covers_ch from '../data/covers_ch'
+import sectionList_ch from '../data/sectionList_ch'
 
 const ChapterTwo = () => {
-  const cover = covers[2]
-  const { description: descript, items: lists } = sectionList[3];
+  const cover = covers_ch[2]
+  const { description: descript, items: lists } = sectionList_ch[3];
   const [ flow, prepare, build, train, save ] = lists.slice(0, 7)
-  const { name: l, link: ll } = sectionList[2]
-  const { name: r, link: rl } = sectionList[4]
+  const { name: l, link: ll } = sectionList_ch[2]
+  const { name: r, link: rl } = sectionList_ch[4]
 
   useScrollToHash()
 

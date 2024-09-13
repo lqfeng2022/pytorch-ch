@@ -1,11 +1,11 @@
 import { Box } from '@chakra-ui/react'
-import chapterOne from '../../data/chapterOne'
 import BaseGrid from '../BaseGrid'
 import CodeDisplay from '../CodeDisplay'
 import pythonCode from '../../data/codeTensors'
+import chapterOne_ch from '../../data/chapterOne_ch'
 
-const TensorAttributs = () => {
-  const [ attributes, shape ] = chapterOne[2].sections
+const TensorAttributes = () => {
+  const [ attributes, shape ] = chapterOne_ch[2].sections
   const attributesCode = pythonCode[5].code
 
   return (
@@ -19,4 +19,4 @@ const TensorAttributs = () => {
   )
 }
 
-export default TensorAttributs
+export default TensorAttributes

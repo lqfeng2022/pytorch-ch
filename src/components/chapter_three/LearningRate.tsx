@@ -1,14 +1,11 @@
-import React from 'react'
-import Definition from '../Definition'
-import chapterThree from '../../data/chapterThree'
+import chapterThree_ch from '../../data/chapterThree_ch'
 import BaseGrid from '../BaseGrid'
+import Definition from '../Definition'
 import LeftGrid from '../LeftGrid'
 import RightGrid from '../RightGrid'
 
 const LearningRate = () => {
-  const [ 
-    whats, lr, lr_low, lr_high, lr_right
-  ] = chapterThree[5].sections
+  const [ whats, lr, lr_low, lr_high, lr_right ] = chapterThree_ch[5].sections
 
   return (
     <div>

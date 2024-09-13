@@ -3,7 +3,7 @@ export default [
     name: "Linear Regression",
     sections: [
       { id: 0,
-        name: "1. 线性回归", 
+        name: "1. 线性回归 (Linear Regression)", 
         value: "Linear regression is a statistic method that models a straight-line relationship between 2 types of variables.",
         image: "",
         content: [
@@ -34,7 +34,7 @@ export default [
     name: "Normal Distribution",
     sections: [
       { id: 0,
-        name: "2. 正态分布", 
+        name: "2. 正态分布 (Normal Distribution)", 
         value: "A Normal Distribution is a type of continuous probability distribution for a real-valued random variable, typically forming a bell curve.",
         image: "",
         content: [
@@ -104,7 +104,7 @@ export default [
     name: "Loss Function",
     sections: [
       { id: 0,
-        name: "3. 损失函数",
+        name: "3. 损失函数: MSE",
         value: "The Loss Function is used to evaluate how well your model’s predictions are performing, the lower the value, the better the model is doing.",
         image: "",
         content: [
@@ -203,7 +203,7 @@ export default [
     name: "Gradient Descent",
     sections: [
       { id: 0,
-        name: "4. 梯度下降",
+        name: "4. 梯度下降 (GD)",
         value: "Gradient Descent is an optimization algorithm that calculates the gradient (slope) using all the samples in the training set to update the model’s parameters during each iteration.",
         image: "",
         content: [

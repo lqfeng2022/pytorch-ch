@@ -1,4 +1,4 @@
-import chapterFour from '../../data/chapterFour'
+import chapterFour_ch from '../../data/chapterFour_ch'
 import codeBinaryModel from '../../data/codeBinaryModel'
 import BaseGrid from '../BaseGrid'
 import CodeDisplay from '../CodeDisplay'
@@ -7,10 +7,10 @@ import LeftGrid from '../LeftGrid'
 import RightGrid from '../RightGrid'
 
 const ImproveModel = () => {
-  const [ defin, improve ] = chapterFour[3].sections
-  const [ one, one_architec, one_build, one_visual, one_loss ] = chapterFour[4].sections
-  const [ two, two_build, two_visual, two_loss ] = chapterFour[5].sections
-  const [ three, three_build, three_visual, three_loss ] = chapterFour[6].sections
+  const [ defin, improve ] = chapterFour_ch[3].sections
+  const [ one, one_architec, one_build, one_visual, one_loss ] = chapterFour_ch[4].sections
+  const [ two, two_build, two_visual, two_loss ] = chapterFour_ch[5].sections
+  const [ three, three_build, three_visual, three_loss ] = chapterFour_ch[6].sections
 
   const [ one_build_code, one_train_code, one_loss_code
   ] = codeBinaryModel.slice(7, 10).map(obj => obj.code)

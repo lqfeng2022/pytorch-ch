@@ -9,23 +9,23 @@ import {
   PTSection,
   Prerequisites
 } from '../components/chapter_zero';
+import ChapterListTwo from '../components/ChapterListTwo';
 import FootLinks from '../components/FootLinks';
 import Header from '../components/Header';
 import useScrollToHash from '../components/useScrollToHash';
-import chapterZero from '../data/chapterZero';
-import covers from '../data/covers';
-import sectionList from '../data/sectionList';
-import ChapterListTwo from '../components/ChapterListTwo';
+import chapterZero_ch from '../data/chapterZero_ch';
+import covers_ch from '../data/covers_ch';
+import sectionList_ch from '../data/sectionList_ch';
 
 const ChapterZero = () => {
-  const cover = covers[0]
-  const { description: descript, items: lists } = sectionList[1]
+  const cover = covers_ch[0]
+  const { description: descript, items: lists } = sectionList_ch[1]
   const lItems = lists.slice(0, 4)
   const rItems = lists.slice(-4)
   const [ ai, ml, dl, nn, lib, pt, pre, take ] = lists.slice(0, 8)
-  const { name: l, link: ll } = sectionList[0]
-  const { name: r, link: rl } = sectionList[2]
-  const [ takeCourse ] = chapterZero[7].sections
+  const { name: l, link: ll } = sectionList_ch[0]
+  const { name: r, link: rl } = sectionList_ch[2]
+  const [ takeCourse ] = chapterZero_ch[7].sections
 
   useScrollToHash() // Anchor link navigation
 

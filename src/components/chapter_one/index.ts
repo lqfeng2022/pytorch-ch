@@ -1,6 +1,6 @@
 export { default as TensorWhats } from './TensorWhats'
 export { default as TensorCreate } from './TensorCreate'
-export { default as TensorAttributs } from './TensorAttributs'
+export { default as TensorAttributes } from './TensorAttributes'
 export { default as TensorOperations } from './TensorOperations'
 export { default as TensorManipulate } from './TensorManipulate'
 export { default as TensorIndex } from './TensorIndex'

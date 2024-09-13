@@ -1,9 +1,10 @@
 import Definition from '../Definition'
 import chapterThree from '../../data/chapterThree'
 import LeftGrid from '../LeftGrid'
+import chapterThree_ch from '../../data/chapterThree_ch'
 
 const LinearRegression = () => {
-  const [ linear, relation ] = chapterThree[0].sections
+  const [ linear, relation ] = chapterThree_ch[0].sections
 
   return (
     <>

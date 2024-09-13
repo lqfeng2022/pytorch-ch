@@ -1,13 +1,14 @@
 import { Box, Stack, Text, Image, HStack } from '@chakra-ui/react'
 import prere_img from '../../assets/chapter_zero/prerequisites.jpeg'
-import chapterZero from '../../data/chapterZero'
+import chapterZero_ch from '../../data/chapterZero_ch'
 
 const Prerequisites = () => {
-  const preres = chapterZero[6].sections
+  const preres = chapterZero_ch[6].sections
+  const sTitle = "7. 准备工作 (Prerequisites)"
 
   return (
     <Box py={5}>
-      <Text as='b' fontSize='lg' color='gray.600'>7. Prerequisites</Text>
+      <Text as='b' fontSize='lg' color='gray.600'>{sTitle}</Text>
       <Image py={3} src={prere_img}/>
       <Stack spacing={4}>
         {preres.map((p) => 

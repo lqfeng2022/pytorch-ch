@@ -1,10 +1,10 @@
-import chapterFive from '../../data/chapterFive'
+import chapterFive_ch from '../../data/chapterFive_ch'
 import BaseGrid from '../BaseGrid'
 import Definition from '../Definition'
 import LeftGrid from '../LeftGrid'
 
 const SigmoidFunction = () => {
-  const [ defin, formula, features ] = chapterFive[2].sections
+  const [ defin, formula, features ] = chapterFive_ch[2].sections
 
   return (
     <div>

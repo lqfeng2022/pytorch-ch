@@ -1,9 +1,9 @@
 import BaseGrid from '../BaseGrid'
 import Definition from '../Definition'
-import chapterZero from '../../data/chapterZero'
+import chapterZero_ch from '../../data/chapterZero_ch'
 
 const NNSection = () => {
-  const [ whats, model, neurons ] = chapterZero[3].sections
+  const [ whats, model, neurons ] = chapterZero_ch[3].sections
   
   return (
     <>

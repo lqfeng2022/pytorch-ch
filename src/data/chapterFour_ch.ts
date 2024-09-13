@@ -3,7 +3,7 @@ export default [
     name: "Prepare DATA",
     sections: [
       { id: 0, 
-        name: "1. Prepare DATA", 
+        name: "1. 准备数据", 
         value: "Too much explaining is not a good thing. We’ll explore what data preparation is and how it works in this real project.",
         image: "",
         content: [
@@ -48,7 +48,7 @@ export default [
     name: "Build a Model",
     sections: [
       { id: 0, 
-        name: "2. Build a Model", 
+        name: "2. 构建模型", 
         value: "Building a model in deep learning involves designing, implementing a neural network to learn patterns from data for a specific task.",
         image: "",
         content: [
@@ -94,7 +94,7 @@ export default [
     name: "Train a Model",
     sections: [
       { id: 0, 
-        name: "3. Train a Model", 
+        name: "3. 训练模型", 
         value: "Unlike our previous model, we use a new loss function - Binary Cross Entropy - and run training and test data on GPUs if available.",
         image: "",
         content: [
@@ -155,7 +155,7 @@ export default [
     name: "Improve a Model",
     sections: [
       { id: 0, 
-        name: "4. Improve a Model", 
+        name: "4. 优化模型", 
         value: "Improving a model involves making adjustments to enhance its performance on a given task.",
         image: "",
         content: [
@@ -356,7 +356,7 @@ export default [
     name: "Save a Model",
     sections: [
       { id: 0, 
-        name: "5. Save a Model", 
+        name: "5. 保存模型", 
         value: "Before we save the model, we need to choose the best one.",
         image: "",
         content: [

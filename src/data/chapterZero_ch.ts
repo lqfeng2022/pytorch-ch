@@ -583,7 +583,7 @@ export default [
     ]
   }, 
   { id: 7, 
-    name: "前提条件",
+    name: "Prerequisites",
     sections: [
       { id: 0, 
         name: "Python 编程语言",

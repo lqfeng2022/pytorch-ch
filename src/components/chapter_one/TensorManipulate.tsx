@@ -1,14 +1,14 @@
 import { Box } from '@chakra-ui/react'
-import chapterOne from '../../data/chapterOne'
 import BaseGrid from '../BaseGrid'
 import pythonCode from '../../data/codeTensors'
 import CodeDisplay from '../CodeDisplay'
 import LeftGrid from '../LeftGrid'
+import chapterOne_ch from '../../data/chapterOne_ch'
 
 const TensorManipulate = () => {
   const [ 
     manipul, changeshape, transpose, permute, reshape, numpy, concat_stack, stack, vstack, hstack
-  ] = chapterOne[4].sections
+  ] = chapterOne_ch[4].sections
   const [
     squeezeCode, transposeCode, permuteCode, reshapeCode, numpyCode, concatStackCode, stackCode, vstackCode, hstackCode
   ] = pythonCode.slice(9, 18).map(obj => obj.code);

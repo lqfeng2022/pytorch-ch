@@ -3,7 +3,7 @@ export default [
     name: "TENSORs ?",
     sections: [
       { id: 0,
-        name: "什么是张量", 
+        name: "1. 张量 ?", 
         value: "A TENSOR is a multi-dimensional array with a single data type.",
         image: "",
         content: [
@@ -126,7 +126,7 @@ export default [
     name: "Tensor Attributes",
     sections: [
       { id: 0,
-        name: "3. 张量属性", 
+        name: "3. 张量的四大属性", 
         value: "在 PyTorch 中, 张量有几个重要的属性, 它们可以提供有关张量结构、数据类型以及存储位置(CPU 或 GPU) 的信息。你经常会使用的主要属性有 ‘shape’(形状) 、‘ndim’(维度) 、‘dtype’(数据类型) 和 ‘device’(设备) 。以下是每个属性的简要概述:",
         image: "src/assets/chapter_one/attributes.jpeg",
         content: [
@@ -169,7 +169,7 @@ export default [
     name: "Tensor Operations",
     sections: [
       { id: 0,
-        name: "4. 张量运算 (Tensor Operations)", 
+        name: "4. 张量运算", 
         value: "",
         image: "src/assets/chapter_one/operats.jpeg",
         content: [
@@ -297,7 +297,7 @@ export default [
     name: "Tensor Manipulation",
     sections: [
       { id: 0,
-        name: "5. 张量操作(Tensor Manipulation)", 
+        name: "5. 张量操作", 
         value: "",
         image: "src/assets/chapter_one/manipul.jpeg",
         content: [
@@ -482,7 +482,7 @@ export default [
     name: "Tensor Indexing",
     sections: [
       { id: 0,
-        name: "6. 张量索引", 
+        name: "6. 张量查找", 
         value: "Tensor indexing in PyTorch is all about accessing specific elements, rows, columns, or subarrays within a tensor.",
         image: "",
         content: [
@@ -528,7 +528,7 @@ export default [
     name: "Tensor Reproducibility",
     sections: [
       { id: 0, 
-        name: "7. 张量可重复性",
+        name: "7. 张量可复现性",
         value: "You can get the Same Results on your computer - regardless of platform, PyTorch version, or hardware(CPU/GPUs) - as I get on mine, simply running the same code.",
         image: "",
         content: [
@@ -661,7 +661,7 @@ export default [
     name: "Tensor on GPUs",
     sections: [
       { id: 0, 
-        name: "8. Tensor on GPUs",
+        name: "8. GPU 上的张量",
         value: "Running tensors on GPUs can significantly speed up computation, especially when dealing with large tensors or training deep learning models.",
         image: "", 
         content: [

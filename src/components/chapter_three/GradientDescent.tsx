@@ -1,12 +1,11 @@
-import chapterThree from '../../data/chapterThree'
 import Definition from '../Definition'
 import LeftGrid from '../LeftGrid'
 import BaseGrid from '../BaseGrid'
+import chapterThree_ch from '../../data/chapterThree_ch'
 
 const GradientDescent = () => {
-  const [
-    whats, gdone, gdone_table, gdone_mse, gdtwo_visual, gdtwo_table, gdtwo 
-  ] = chapterThree[3].sections
+  const [ whats, gdone, gdone_table, gdone_mse, gdtwo_visual, gdtwo_table, gdtwo 
+  ] = chapterThree_ch[3].sections
 
   return (
     <>  

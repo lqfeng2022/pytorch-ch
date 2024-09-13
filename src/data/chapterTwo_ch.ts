@@ -118,7 +118,7 @@ export default [
     name: "Build a Model",
     sections: [
       { id: 0, 
-        name: "2. 创建一个模型", 
+        name: "2. 构建模型", 
         value: "Building a model involves designing and implementing a machine learning algorithm that learns patterns from data to make predictions or decisions.",
         image: "",
         content: [
@@ -270,7 +270,7 @@ export default [
     name: "Save a Model",
     sections: [
       { id: 0, 
-        name: "4. Save a Model", 
+        name: "4. 保存模型", 
         value: "Saving a model involves storing the trained model’s parameters to a file, allowing you to reuse the model later without retraining it from scratch.",
         image: "",
         content: [

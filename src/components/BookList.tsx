@@ -10,14 +10,14 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { Link, useLocation } from 'react-router-dom';
-import chapterList from '../data/sectionList';
+import sectionList_ch from '../data/sectionList_ch';
 
 const BookList = () => {
   const location = useLocation();
 
-  const frontMatter = chapterList[0]
-  const chapters = chapterList.slice(1, 13)
-  const backMatter = chapterList.slice(-2)
+  const frontMatter = sectionList_ch[0]
+  const chapters = sectionList_ch.slice(1, 13)
+  const backMatter = sectionList_ch.slice(-2)
 
   return (
     <Accordion allowToggle>

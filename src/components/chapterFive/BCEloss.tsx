@@ -1,11 +1,10 @@
-import chapterFive from '../../data/chapterFive'
+import chapterFive_ch from '../../data/chapterFive_ch'
 import BaseGrid from '../BaseGrid'
 import Definition from '../Definition'
 
 const BCEloss = () => {
-  const [ 
-    defin, bceFormula, crossEntropy, entropy 
-  ]= chapterFive[1].sections
+  const [ defin, bceFormula, crossEntropy, entropy 
+  ]= chapterFive_ch[1].sections
 
   return (
     <div>

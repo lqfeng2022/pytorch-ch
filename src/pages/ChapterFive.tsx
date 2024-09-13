@@ -10,15 +10,15 @@ import ChapterList from '../components/ChapterList'
 import FootLinks from '../components/FootLinks'
 import Header from '../components/Header'
 import useScrollToHash from '../components/useScrollToHash'
-import covers from '../data/covers'
-import sectionList from '../data/sectionList'
+import covers_ch from '../data/covers_ch'
+import sectionList_ch from '../data/sectionList_ch'
 
 const ChapterFive = () => {
-  const cover = covers[5]
-  const { description: descript, items: lists } = sectionList[6]
+  const cover = covers_ch[5]
+  const { description: descript, items: lists } = sectionList_ch[6]
   const [ classific, bceloss, sigmoid, relu, backpro ] = lists.slice(0, 5)
-  const { name: l, link: ll } = sectionList[5]
-  const { name: r, link: rl } = sectionList[7]
+  const { name: l, link: ll } = sectionList_ch[5]
+  const { name: r, link: rl } = sectionList_ch[7]
 
   useScrollToHash()
 

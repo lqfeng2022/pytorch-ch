@@ -29,7 +29,7 @@ function HomePage() {
       <Stack spacing={5} pb={5}>
         { showContent && <>
           <Image src={bookImage} alt='Book Cover'/>
-          <Text>What's up! I built this web for a PyTorch training course, and it's designed for beginners who're interested in deep learning. You can explore all the deep lerning content here,  If this course sparks your curiosity and leaves you wanting more, don't miss my YouTube channel, where we dive even deeper into exciting <Text as='b'>deep learning models</Text>. Let's hit the road!</Text>
+          <Text>哈啰! 为了向大家介绍人工智能, 我写了这个网站, 欢迎入坑。</Text>
           {!isLargeScreen && 
             <Button 
               bg='tomato'
@@ -39,7 +39,7 @@ function HomePage() {
               onClick={handleShow}
               _hover={{ bg: '#E53E3E' }}
             >
-              SHALL WE
+              目 录
             </Button>
           }
         </>}

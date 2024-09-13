@@ -1,4 +1,4 @@
-import chapterTwo from '../../data/chapterTwo'
+import chapterTwo_ch from '../../data/chapterTwo_ch'
 import codeLineModel from '../../data/codeLineModel'
 import CodeDisplay from '../CodeDisplay'
 import Definition from '../Definition'
@@ -6,7 +6,7 @@ import LeftGrid from '../LeftGrid'
 import RightGrid from '../RightGrid'
 
 const PrepareData = () => {
-  const [ prepare, create, split, visual ] = chapterTwo[1].sections
+  const [ prepare, create, split, visual ] = chapterTwo_ch[1].sections
   const [
     createCode, splitCode, visualCode
   ] = codeLineModel.slice(0, 3).map(obj => obj.code);

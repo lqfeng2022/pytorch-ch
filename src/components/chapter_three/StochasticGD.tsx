@@ -1,9 +1,9 @@
-import chapterThree from '../../data/chapterThree'
 import Definition from '../Definition'
 import BaseGrid from '../BaseGrid'
+import chapterThree_ch from '../../data/chapterThree_ch'
 
 const StochasticGD = () => {
-  const [ whats, sgd_one, sgd_two ] = chapterThree[4].sections
+  const [ whats, sgd_one, sgd_two ] = chapterThree_ch[4].sections
 
   return (
     <div>

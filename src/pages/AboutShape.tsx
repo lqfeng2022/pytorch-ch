@@ -1,12 +1,11 @@
 import { Container, Divider, Flex, Heading, Stack, Text } from '@chakra-ui/react'
-import introduce from '../data/introduce'
 import FootLinks from '../components/FootLinks'
-import sectionList from '../data/sectionList'
+import introduce_ch from '../data/introduce_ch'
+import sectionList_ch from '../data/sectionList_ch'
 
 const AboutShape = () => {
-  const intro = introduce[7]
-  const { name: l, link: ll } = sectionList[13]
-  // const { name: r, link: rl } = sectionList[0]
+  const intro = introduce_ch[7]
+  const { name: l, link: ll } = sectionList_ch[13]
 
   return (
     <Container maxW='1200px' px='10px'>
