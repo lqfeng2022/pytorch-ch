@@ -4,7 +4,7 @@ export default [
     sections: [
       { id: 1,
         name: "1. 人工智能(AI)", 
-        value: "Artificial Intelligence (AI) is a branch of Computer Science that makes Machines and Systems perform tasks that Simulate Human Intelligence.",
+        value: "人工智能 (AI) 是计算机科学的一个领域，它让机器和系统能够执行模仿人类智能的任务。",
         image: "",
         content: [
           { id: 1, 
@@ -125,7 +125,7 @@ export default [
     sections: [
       { id: 0, 
         name: "2. 机器学习", 
-        value: "Machine Learning (ML) is a subset of AI that perform Specific Tasks without being Explicitly Programmed.",
+        value: "机器学习 (ML) 是人工智能的一部分，它能够在没有明确指令的情况下自主完成特定任务。",
         image: "",
         content: [
           { id: 1, 
@@ -202,7 +202,7 @@ export default [
     sections: [
       { id: 0, 
         name: "3. 深度学习", 
-        value: "Deep Learning (DL) is a subset of Machine Learning that utilizes neural networks with multiple layers to model complex patterns in data.",
+        value: "深度学习 (DL) 是机器学习的一部分，它通过使用多层神经网络来分析数据中的复杂模式。",
         image: "",
         content: [
           { id: 1, 
@@ -337,7 +337,7 @@ export default [
     sections: [
       { id: 0, 
         name: "4. 神经网络", 
-        value: "A Neural Network (NN) is a type of algorithm designed to mimic the way the human brain processes information and the connections between neurons.",
+        value: "神经网络 (NN) 是一种模仿人脑处理信息和神经元连接方式的算法。",
         image: "",
         content: [
           { id: 1, 
@@ -495,7 +495,7 @@ export default [
     sections: [
       { id: 0, 
         name: "6. PyTorch", 
-        value: "PyTorch is an open-source Deep Learning framework based on the Torch library, designed for use with the Python programming language.",
+        value: "PyTorch 是一个基于 Torch 库的开源深度学习框架，专为 Python 编程语言设计。",
         image: "",
         content: [
           { id: 1, 

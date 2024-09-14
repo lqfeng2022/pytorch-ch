@@ -16,7 +16,7 @@ const Reference = () => {
         {'参考资料'}
       </Heading>
       <ReferGrid section={paper}/>
-      <Stack pt={5} pb={5} spacing={3}>
+      <Stack py={5} spacing={0}>
         <Heading as='b' fontSize='lg' color='gray.600' mt={3}>
           {'教学视频:'}
         </Heading>

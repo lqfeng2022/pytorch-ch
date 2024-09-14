@@ -4,7 +4,7 @@ export default [
     sections: [
       { id: 0,
         name: "0. PyTorch 工作流程", 
-        value: "A PyTorch workflow typically follows a sequence of steps that guide you through building, training, and evaluating deep learning models.",
+        value: "在 PyTorch 中，深度学习模型的工作流程, 通常包括从构建到训练再到评估等一系列步骤。",
         image: "",
         content: [
           { id: 1, 
@@ -58,7 +58,7 @@ export default [
     sections: [
       { id: 0, 
         name: "1. 准备数据", 
-        value: "Preparing data is the first step in machine learning, involving the organization and refinement of raw data to ensure it is suitable for training.",
+        value: "准备数据, 是机器学习的第一步，包括对原始数据进行整理和优化等，以确保它适用于模型训练。",
         image: "",
         content: [
           { id: 1,
@@ -119,7 +119,7 @@ export default [
     sections: [
       { id: 0, 
         name: "2. 构建模型", 
-        value: "Building a model involves designing and implementing a machine learning algorithm that learns patterns from data to make predictions or decisions.",
+        value: "构建模型, 包括设计和实现一个机器学习算法，该算法从数据中学习模式以进行预测或决策。",
         image: "",
         content: [
           { id: 1,
@@ -176,7 +176,7 @@ export default [
     sections: [
       { id: 0, 
         name: "3. 训练模型", 
-        value: "Training a model involves optimizing its parameters using labeled data, while testing evaluates the model’s performance on unseen data to assess its generalization ability.",
+        value: "训练模型, 包括使用标记数据来优化模型参数，并使用未知数据来评估模型的表现，以检验其泛化能力。",
         image: "",
         content: [
           { id: 1,
@@ -271,7 +271,7 @@ export default [
     sections: [
       { id: 0, 
         name: "4. 保存模型", 
-        value: "Saving a model involves storing the trained model’s parameters to a file, allowing you to reuse the model later without retraining it from scratch.",
+        value: "保存模型是将训练好的模型参数存储到文件中，这样你可以在以后重复使用该模型，而无需重新训练。",
         image: "",
         content: [
           { id: 1,

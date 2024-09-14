@@ -4,7 +4,7 @@ export default [
     sections: [
       { id: 0, 
         name: "1. 准备数据", 
-        value: "Too much explaining is not a good thing. We’ll explore what data preparation is and how it works in this real project.",
+        value: "过多的解释没什么好处。我们将在这个具体的项目中，探索数据准备的更多方法和技巧。",
         image: "",
         content: [
         ]
@@ -49,7 +49,7 @@ export default [
     sections: [
       { id: 0, 
         name: "2. 构建模型", 
-        value: "Building a model in deep learning involves designing, implementing a neural network to learn patterns from data for a specific task.",
+        value: "构建深度学习模型时，我们首先需要根据具体的问题，选择一个合适的神经网络，这时第一步。",
         image: "",
         content: [
           { id: 1,
@@ -95,7 +95,7 @@ export default [
     sections: [
       { id: 0, 
         name: "3. 训练模型", 
-        value: "Unlike our previous model, we use a new loss function - Binary Cross Entropy - and run training and test data on GPUs if available.",
+        value: "与之前的模型不同，我们使用了新的损失函数: 二元交叉熵，并且可以在 GPU 上训练和测试数据。",
         image: "",
         content: [
         ]
@@ -156,7 +156,7 @@ export default [
     sections: [
       { id: 0, 
         name: "4. 优化模型", 
-        value: "Improving a model involves making adjustments to enhance its performance on a given task.",
+        value: "改进模型，是通过重构模型或者模型微调，来提升它在特定任务上的表现。",
         image: "",
         content: [
           { id: 1,
@@ -190,7 +190,7 @@ export default [
     name: "The 1st Model (+ReLU)",
     sections: [
       { id: 0, 
-        name: "4.1 The First Model (+ReLU)", 
+        name: "4.1 第一个改进模型 (+ReLU)", 
         value: "",
         image: "src/assets/chapter_four/improve_one.jpeg",
         content: [
@@ -201,7 +201,7 @@ export default [
         ]
       },
       { id: 1, 
-        name: ":: Architecture of Model", 
+        name: ":: 设计模型架构", 
         value: "",
         image: "src/assets/chapter_four/improve_one_architec.jpeg",
         content: [
@@ -212,7 +212,7 @@ export default [
         ]
       },
       { id: 2, 
-        name: ":: Build and Train model", 
+        name: ":: 构建和训练模型", 
         value: "",
         image: "src/assets/chapter_four/improve_one_build.jpeg",
         content: [
@@ -223,7 +223,7 @@ export default [
         ]
       },
       { id: 3, 
-        name: ":: Evaluate Model", 
+        name: ":: 评估模型", 
         value: "",
         image: "src/assets/chapter_four/improve_one_test.png",
         content: [
@@ -234,7 +234,7 @@ export default [
         ]
       },
       { id: 4, 
-        name: ":: Check the Loss Curves", 
+        name: ":: 查看损失曲线", 
         value: "",
         image: "src/assets/chapter_four/improve_one_loss.png",
         content: [
@@ -254,7 +254,7 @@ export default [
     name: "The 2nd Model (+epochs)",
     sections: [
       { id: 0, 
-        name: "4.2 The Second Model (+epochs)", 
+        name: "4.2 第二个改进模型 (+epochs)", 
         value: "",
         image: "src/assets/chapter_four/improve_two.jpeg",
         content: [
@@ -265,7 +265,7 @@ export default [
         ]
       },
       { id: 1, 
-        name: ":: Build and Train Model", 
+        name: ":: 构建和训练模型", 
         value: "",
         image: "src/assets/chapter_four/improve_two_build.jpeg",
         content: [
@@ -280,7 +280,7 @@ export default [
         ]
       },
       { id: 2, 
-        name: ":: Evaluate Model", 
+        name: ":: 评估模型", 
         value: "",
         image: "src/assets/chapter_four/improve_two_test.png",
         content: [
@@ -291,7 +291,7 @@ export default [
         ]
       },
       { id: 3, 
-        name: ":: Check the Loss Curves", 
+        name: ":: 查看损失曲线", 
         value: "",
         image: "src/assets/chapter_four/improve_two_loss.png",
         content: [
@@ -304,10 +304,10 @@ export default [
     ]
   },
   { id: 6, 
-    name: "The 3rd Model (->lr)",
+    name: "The Third Model (->lr)",
     sections: [
       { id: 0, 
-        name: "4.3 The Third Model (->lr)", 
+        name: "4.3 第三个改进模型 (->lr)", 
         value: "",
         image: "src/assets/chapter_four/improve_three.jpeg",
         content: [
@@ -318,7 +318,7 @@ export default [
         ]
       },
       { id: 1, 
-        name: ":: Build and Train Model", 
+        name: ":: 构建和训练模型", 
         value: "",
         image: "src/assets/chapter_four/improve_three_build.jpeg",
         content: [
@@ -329,7 +329,7 @@ export default [
         ]
       },
       { id: 2, 
-        name: ":: Evaluate Model", 
+        name: ":: 评估模型", 
         value: "",
         image: "src/assets/chapter_four/improve_three_test.png",
         content: [
@@ -340,7 +340,7 @@ export default [
         ]
       },
       { id: 3, 
-        name: ":: Check the Loss Curves", 
+        name: ":: 查看损失曲线", 
         value: "",
         image: "src/assets/chapter_four/improve_three_loss.png",
         content: [
@@ -357,7 +357,7 @@ export default [
     sections: [
       { id: 0, 
         name: "5. 保存模型", 
-        value: "Before we save the model, we need to choose the best one.",
+        value: "在保存模型之前，我们需要选择表现最好的那个。",
         image: "",
         content: [
           { id: 1,
@@ -367,7 +367,7 @@ export default [
         ]
       },
       { id: 1, 
-        name: "5.0 Choose a Best Model", 
+        name: "5.0 选择一个最好的模型", 
         value: "",
         image: "src/assets/chapter_four/save_choose.png",
         content: [
@@ -378,7 +378,7 @@ export default [
         ]
       },
       { id: 2, 
-        name: "5.1 Save a Model", 
+        name: "5.1 保存模型", 
         value: "",
         image: "src/assets/chapter_four/save_model_3.jpeg",
         content: [
@@ -389,7 +389,7 @@ export default [
         ]
       },
       { id: 3, 
-        name: "5.2 Load a Model", 
+        name: "5.2 下载模型参数", 
         value: "",
         image: "src/assets/chapter_four/save_load_model_3.jpeg",
         content: [

@@ -2,9 +2,9 @@ export default [
   { id: 1, 
     name: "TENSORs ?",
     sections: [
-      { id: 0,
+      { id: 1,
         name: "1. 张量 ?", 
-        value: "A TENSOR is a multi-dimensional array with a single data type.",
+        value: "张量是一个单一数据类型的多维数组。",
         image: "",
         content: [
           { id: 1, 
@@ -13,7 +13,7 @@ export default [
           },
         ]
       },
-      { id: 1,
+      { id: 2,
         name: ":: 标量, 向量, 矩阵, 张量", 
         value: "",
         image: "src/assets/chapter_one/tensors.jpeg",
@@ -41,7 +41,7 @@ export default [
   { id: 2, 
     name: "Tensor Creating",
     sections: [
-      { id: 0,
+      { id: 1,
         name: "2. 创建张量", 
         value: "",
         image: "src/assets/chapter_one/create.jpeg",
@@ -52,7 +52,7 @@ export default [
           },
         ]
       },
-      { id: 1,
+      { id: 2,
         name: "2.1 随机张量", 
         value: "",
         image: "src/assets/chapter_one/create_random.jpeg",
@@ -71,7 +71,7 @@ export default [
           },
         ]
       },
-      { id: 2,
+      { id: 3,
         name: "2.2 零张量 & 一张量", 
         value: "",
         image: "src/assets/chapter_one/create_zerosOnes.jpeg",
@@ -90,7 +90,7 @@ export default [
           },
         ]
       },
-      { id: 3,
+      { id: 4,
         name: "2.3 范围张量", 
         value: "",
         image: "src/assets/chapter_one/create_range.jpeg",
@@ -101,7 +101,7 @@ export default [
           },
           { id: 2, 
             title: "为什么使用范围张量？",
-            value: "范围张量通常用于在其他张量中进行切片或操作特定范围时创建索引值。"
+            value: "范围张量通常用于在其他张量中进行切片或操作特定范围时创建查找值。"
           },
           { id: 3, 
             title: "如何创建范围张量？",
@@ -109,14 +109,14 @@ export default [
           },
         ]
       },
-      { id: 4,
+      { id: 5,
         name: "2.4 类似张量", 
         value: "",
         image: "src/assets/chapter_one/create_like.jpeg",
         content: [
           { id: 1, 
             title: "",
-            value: "在 PyTorch 中, 当我们提到 ‘类似张量’ 时, 通常指的是像 torch.zeros_like() 和 torch.ones_like() 这样的函数。这些函数用于创建与给定张量具有相同形状和设备的新张量, 但这些张量的元素全部被初始化为零或一。"
+            value: "在 PyTorch 中, 当我们提到  '类似张量'  时, 通常指的是像 torch.zeros_like() 和 torch.ones_like() 这样的函数。这些函数用于创建与给定张量具有相同形状和设备的新张量, 但这些张量的元素全部被初始化为零或一。"
           },
         ]
       },
@@ -127,30 +127,30 @@ export default [
     sections: [
       { id: 0,
         name: "3. 张量的四大属性", 
-        value: "在 PyTorch 中, 张量有几个重要的属性, 它们可以提供有关张量结构、数据类型以及存储位置(CPU 或 GPU) 的信息。你经常会使用的主要属性有 ‘shape’(形状) 、‘ndim’(维度) 、‘dtype’(数据类型) 和 ‘device’(设备) 。以下是每个属性的简要概述:",
+        value: "在 PyTorch 中, 张量有几个重要的属性, 它们可以提供有关张量结构、数据类型以及存储位置(CPU 或 GPU) 的信息。你经常会使用的主要属性有 'shape' (形状) 、 'ndim' (维度) 、 'dtype' (数据类型) 和  'device' (设备) 。以下是每个属性的简要概述:",
         image: "src/assets/chapter_one/attributes.jpeg",
         content: [
           { id: 1, 
             title: "形状 (shape)",
-            value: "‘形状’ 属性告诉你张量每个维度的大小。它是一个整数 tuple, 每个整数代表张量在某一特定维度上的大小。了解张量的形状非常重要, 因为它定义了你正在处理的数据的结构, 并告诉你每个维度包含多少元素。"
+            value: "'形状' 属性告诉你张量每个维度的大小。它是一个整数 tuple, 每个整数代表张量在某一特定维度上的大小。了解张量的形状非常重要, 因为它定义了你正在处理的数据的结构, 并告诉你每个维度包含多少元素。"
           },
           { id: 2, 
             title: "维度 (ndim)",
-            value: "‘ndim’ 属性表示张量的维数(也称为轴的数量) 。理解张量的维度对操作如重塑 (reshaping) 和可视化数据结构非常关键。"
+            value: "'ndim' 属性表示张量的维数(也称为轴的数量) 。理解张量的维度对操作如重塑 (reshaping) 和可视化数据结构非常关键。"
           },
           { id: 3, 
             title: "数据类型 (dtype)",
-            value: "‘dtype’ 属性指示存储在张量中的元素的数据类型, 比如 ‘torch.float32’ 或 ‘torch.int64’。数据类型决定了张量中数值的精度和范围。选择合适的数据类型会影响计算的性能和内存使用。"
+            value: "'dtype' 属性指示存储在张量中的元素的数据类型, 比如 'torch.float32' 或  'torch.int64' 。数据类型决定了张量中数值的精度和范围。选择合适的数据类型会影响计算的性能和内存使用。"
           },
           { id: 4, 
             title: "设备 (device)",
-            value: "‘设备’ 属性告诉你张量的数据存储在何处：CPU 或 GPU。存储在 GPU 上的张量, 其设备属性会显示为类似 ‘cuda:0’ 的值。在使用 GPU 加速计算时, 了解张量存储的位置非常重要。为了避免错误, 你需要确保参与计算的所有张量都位于相同的设备上。"
+            value: " '设备'  属性告诉你张量的数据存储在何处: CPU 或 GPU。存储在 GPU 上的张量, 其设备属性会显示为类似  'cuda:0'  的值。在使用 GPU 加速计算时, 了解张量存储的位置非常重要。为了避免错误, 你需要确保参与计算的所有张量都位于相同的设备上。"
           },
         ]
       },
       { id: 1,
-        name: "3.1 形状 (Shape)", 
-        value: "在 PyTorch 中使用 shape 属性有时会比较棘手, 特别是在处理张量的操作或执行涉及重塑和矩阵乘法的操作时。我们通过一个例子来可视化 shape 属性。",
+        name: ":: 一个例子", 
+        value: "",
         image: "src/assets/chapter_one/attributes_shape.jpeg",
         content: [
           { id: 1, 
@@ -168,7 +168,7 @@ export default [
   { id: 4, 
     name: "Tensor Operations",
     sections: [
-      { id: 0,
+      { id: 1,
         name: "4. 张量运算", 
         value: "",
         image: "src/assets/chapter_one/operats.jpeg",
@@ -179,7 +179,7 @@ export default [
           },
         ]
       },
-      { id: 1,
+      { id: 2,
         name: "4.1 基本运算", 
         value: "",
         image: "src/assets/chapter_one/operats_addsub.jpeg",
@@ -190,7 +190,7 @@ export default [
           },
         ]
       },
-      { id: 2,
+      { id: 3,
         name: "4.2 矩阵乘法", 
         value: "",
         image: "src/assets/chapter_one/operats_matmul.jpeg",
@@ -205,7 +205,7 @@ export default [
           },
         ]
       },
-      { id: 3,
+      { id: 4,
         name: ":: 如何运作", 
         value: "",
         image: "src/assets/chapter_one/operats_matmul_work.jpeg",
@@ -216,7 +216,7 @@ export default [
           },
         ]
       },
-      { id: 4,
+      { id: 5,
         name: ":: 两个规则", 
         value: "",
         image: "src/assets/chapter_one/operats_matmul_rules.jpeg",
@@ -227,7 +227,7 @@ export default [
           },
         ]
       },
-      { id: 5,
+      { id: 6,
         name: ":: 矩阵乘法学习网站", 
         value: "如果你想深入了解矩阵乘法, 我推荐查看以下两个网站。它们提供了有价值的见解, 可以增强你对矩阵乘法和点积的理解。",
         image: "src/assets/chapter_one/operats_matmul_webs.jpeg",
@@ -242,7 +242,7 @@ export default [
           },
         ]
       },
-      { id: 6,
+      { id: 7,
         name: ":: 点积", 
         value: "",
         image: "src/assets/chapter_one/operats_matmul_dot.jpeg",
@@ -253,7 +253,7 @@ export default [
           },
         ]
       },
-      { id: 7,
+      { id: 8,
         name: ":: Transformer 中的点积", 
         value: "点积是 Transformer 架构中的一个基本操作, 使模型能够有效地权衡输入的不同部分的重要程度, 这也是它在翻译、摘要等任务中变得如此强大的原因。",
         image: "src/assets/chapter_one/operats_matmul_dot_mha.jpeg",
@@ -272,7 +272,7 @@ export default [
           },
         ]
       },
-      { id: 8,
+      { id: 9,
         name: "4.3 聚合运算", 
         value: "聚合运算是指沿一个或多个维度减少张量的过程, 以生成一个较低秩 (rank) 的张量。聚合在深度学习中常用于总结或压缩张量中包含的信息, 使其更易于进一步处理。",
         image: "src/assets/chapter_one/operats_aggregate.jpeg",
@@ -287,7 +287,7 @@ export default [
           },
           { id: 3, 
             title: "argmax()/argmin()",
-            value: "返回张量沿特定轴的元素中的最大值/最小值的索引 (index)。"
+            value: "返回张量沿特定轴的元素中的最大值/最小值的查找 (index)。"
           },
         ]
       },
@@ -296,7 +296,7 @@ export default [
   { id: 5, 
     name: "Tensor Manipulation",
     sections: [
-      { id: 0,
+      { id: 1,
         name: "5. 张量操作", 
         value: "",
         image: "src/assets/chapter_one/manipul.jpeg",
@@ -311,8 +311,8 @@ export default [
           },
         ]
       },
-      { id: 1,
-        name: "5.1 重塑张量", 
+      { id: 2,
+        name: "5.1 张量重塑 (reshape)", 
         value: "",
         image: "src/assets/chapter_one/manipul_shape.jpeg",
         content: [
@@ -334,8 +334,8 @@ export default [
           },
         ]
       },
-      { id: 2,
-        name: ":: 转置张量", 
+      { id: 3,
+        name: ":: 张量转置 (transpose)", 
         value: "在 PyTorch 中, 转置张量是指交换其两个维度。这个操作在数学计算中很常见, 特别是在线性代数中, 当需要交换矩阵的行和列时。但这不仅限于矩阵——你可以对任何张量进行转置, 无论它有多少维度。",
         image: "src/assets/chapter_one/manipul_shape_trans.jpeg",
         content: [
@@ -353,8 +353,8 @@ export default [
           },
         ]
       },
-      { id: 3,
-        name: ":: 转置张量", 
+      { id: 4,
+        name: ":: 张量转置 (permute)", 
         value: "",
         image: "src/assets/chapter_one/manipul_shape_permute.jpeg",
         content: [
@@ -364,8 +364,8 @@ export default [
           },
         ]
       },
-      { id: 4,
-        name: ":: 重塑张量", 
+      { id: 5,
+        name: ":: 张量重塑 (reshape)", 
         value: "",
         image: "src/assets/chapter_one/manipul_shape_reshape.jpeg",
         content: [
@@ -391,8 +391,8 @@ export default [
           },
         ]
       },
-      { id: 5,
-        name: "5.2 更改数据类型", 
+      { id: 6,
+        name: "5.2 改变数据类型", 
         value: "PyTorch 张量可以轻松与 NumPy 数组交互, 使得在两者之间转换变得简单。这种无缝的互操作性在你希望利用 PyTorch 的功能和 NumPy 的优势时非常有用。以下是如何实现这种交互的方式：",
         image: "src/assets/chapter_one/manipul_dtype.jpeg",
         content: [
@@ -414,25 +414,23 @@ export default [
           },
         ]
       },
-      // Move tensor run on GPUs here,
-      // cus that's all about changing the device (cpu/gpu)
-      { id: 6,
-        name: "5.3 连接和堆栈张量", 
+      { id: 7,
+        name: "5.3 张量连接和张量堆栈 (Concatenate | Stack)", 
         value: "",
         image: "src/assets/chapter_one/manipul_catstack.jpeg",
         content: [
           { id: 1, 
-            title: "连接张量",
+            title: "张量连接 (Concatenate)",
             value: "沿着现有维度连接多个张量, 将它们合并成一个单一的张量, 而不会添加新的维度。这对于沿共有纬度连接数据非常理想, 例如合并数据批次。"
           },
           { id: 2, 
-            title: "堆栈张量",
+            title: "张量堆栈 (Stack)",
             value: "从这张图片中, 我们可以看到这个操作将 A 和 B 在第 1 维(列) 上水平堆栈。结果张量 C 的形状为 [4, 10], 这意味着它有 4 行和 10 列。你可以把它想象成将 B 直接放在 A 旁边, 从而使列数翻倍。"
           },
         ]
       },
-      { id: 7,
-        name: ":: 堆栈张量", 
+      { id: 8,
+        name: ":: 张量堆栈 (Stack)", 
         value: "",
         image: "src/assets/chapter_one/manipul_stack.jpeg",
         content: [
@@ -446,8 +444,8 @@ export default [
           },
         ]
       },
-      { id: 8,
-        name: ":: 垂直连接张量", 
+      { id: 9,
+        name: ":: 张量的垂直连接", 
         value: "",
         image: "src/assets/chapter_one/manipul_shape_cat_vstack.jpeg",
         content: [
@@ -461,8 +459,8 @@ export default [
           },
         ]
       },
-      { id: 9,
-        name: ":: 水平连接张量", 
+      { id: 10,
+        name: ":: 张量的水平连接", 
         value: "",
         image: "src/assets/chapter_one/manipul_shape_cat_hstack.jpeg",
         content: [
@@ -481,44 +479,44 @@ export default [
   { id: 6, 
     name: "Tensor Indexing",
     sections: [
-      { id: 0,
-        name: "6. 张量查找", 
-        value: "Tensor indexing in PyTorch is all about accessing specific elements, rows, columns, or subarrays within a tensor.",
+      { id: 1,
+        name: "6. 张量查找 (Indexing)", 
+        value: "在 PyTorch 中，张量查找就是访问张量中的特定元素、行、列或子数组。",
         image: "",
         content: [
           { id: 1, 
             title: "",
-            value: "在 PyTorch 中, 张量索引是访问张量中特定元素、行、列或子数组的操作。它类似于在 Python 中索引列表或数组, 但由于 PyTorch 支持多维张量, 因此功能更强大、更灵活。无论你处理的是简单的 2D 矩阵还是更复杂的张量, 索引都可以让你深入到所需的精确数据。"
+            value: "在 PyTorch 中, 张量查找是访问张量中特定元素、行、列或子数组的操作。它类似于在 Python 中查找列表或数组, 但由于 PyTorch 支持多维张量, 因此功能更强大、更灵活。无论你处理的是简单的 2D 矩阵还是更复杂的张量, 查找都可以让你深入到所需的精确数据。"
           },
         ]
       },
-      { id: 1,
-        name: "6.1 基本索引", 
+      { id: 2,
+        name: "6.1 基本查找 (Basic Indexing)", 
         value: "",
         image: "src/assets/chapter_one/indexing_one.jpeg",
         content: [
           { id: 1, 
             title: "单个元素",
-            value: "你可以使用索引访问张量的单个元素。就像 Python 中的列表一样, 你需要指定每个维度中的位置。"
+            value: "你可以使用查找访问张量的单个元素。就像 Python 中的列表一样, 你需要指定每个维度中的位置。"
           },
           { id: 2, 
             title: "行或列",
-            value: "如果你想访问整个行或列, 可以通过为一个维度指定索引并使用“:”来访问另一个维度。这是一种快速获取特定轴上所有元素的方式。"
+            value: "如果你想访问整个行或列, 可以通过为一个维度指定查找并使用“:”来访问另一个维度。这是一种快速获取特定轴上所有元素的方式。"
           },
         ]
       },
-      { id: 2,
-        name: "6.2 分割和布尔索引", 
+      { id: 3,
+        name: "6.2 分割和布尔查找 (Slice/Boolean Indexing)", 
         value: "",
         image: "src/assets/chapter_one/indexing_two.jpeg",
         content: [
           { id: 1, 
-            title: "分割索引",
+            title: "分割查找",
             value: "你可以使用分割方法从张量中提取一系列元素, 这类似于在 Python 中分割一个列表。你甚至可以指定一个间隔值, 来越过特定范围内的某些元素。"
           },
           { id: 2, 
-            title: "布尔索引",
-            value: "你还可以使用条件来索引张量, 这将返回所有符合该条件的元素。这对于根据特定标准过滤数据非常有用。"
+            title: "布尔查找",
+            value: "你还可以使用条件来查找张量, 这将返回所有符合该条件的元素。这对于根据特定标准过滤数据非常有用。"
           },
         ]
       },
@@ -527,28 +525,28 @@ export default [
   { id: 7,
     name: "Tensor Reproducibility",
     sections: [
-      { id: 0, 
+      { id: 1, 
         name: "7. 张量可复现性",
-        value: "You can get the Same Results on your computer - regardless of platform, PyTorch version, or hardware(CPU/GPUs) - as I get on mine, simply running the same code.",
+        value: "无论你使用什么平台、PyTorch 版本或硬件 (CPU/GPU), 只要运行相同的代码，你在自己的电脑上也能获得和我相同的结果。",
         image: "",
         content: [
           { id: 1, 
             title: "",
             value: "张量可重复性意味着在 PyTorch 中执行张量操作时, 即使多次运行相同的代码, 也能 consistently 获得相同的结果。这在机器学习中很重要, 特别是在模型训练过程中, 一个可靠的结果的前提是: 必须确保你的结果不是因随机变量造成的。"
           }, 
-          { id: 1, 
+          { id: 2, 
             title: "",
             value: "机器学习算法通常涉及一些随机性。例如, 在初始化神经网络权重、将数据划分为训练集和测试集或在训练过程中打乱数据时, 这些过程都会用到随机数生成。"
           }, 
-          { id: 2, 
+          { id: 3, 
             title: "",
             value: "因此, 为了在 PyTorch 中实现张量的可重复性, 最常见的方法是设置随机种子(random seed)。这有助于控制随机性, 并确保在不同的运行中获得一致的结果。"
           },
         ]
       }, 
-      { id: 1, 
+      { id: 2, 
         name: "7.1 随机性",
-        value: "True Randomness means that each possible outcome is equally likely, and there is no way to predict the next result based on previous ones.",
+        value: "真正的随机性, 意味着每个可能的结果都同样有可能发生，无法根据之前的结果预测下一个结果。",
         image: "", 
         content: [
           { id: 1, 
@@ -557,7 +555,7 @@ export default [
           }, 
         ]
       },
-      { id: 2, 
+      { id: 3, 
         name: ":: PyTorch 中的随机性",
         value: "",
         image: "src/assets/chapter_one/randpy.jpeg", 
@@ -572,7 +570,7 @@ export default [
           }, 
         ]
       },
-      { id: 3, 
+      { id: 4, 
         name: ":: 随机性特征",
         value: "",
         image: "src/assets/chapter_one/randfeat.jpeg", 
@@ -591,9 +589,9 @@ export default [
           }
         ]
       },
-      { id: 4, 
+      { id: 5, 
         name: "7.2 伪随机性",
-        value: "There is no real randomness in computers because the randomness is simulated. It's designed, so each step is predictable.",
+        value: "计算机中没有真正的随机性，因为随机性是模拟出来的。它是经过设计的，所以每一步都是可预测的。",
         image: "", 
         content: [
           { id: 1, 
@@ -602,7 +600,7 @@ export default [
           }, 
         ]
       },
-      { id: 5, 
+      { id: 6, 
         name: ":: PSEUDORANDOMNESS Features",
         value: "",
         image: "src/assets/chapter_one/pseudorandf.jpeg", 
@@ -621,9 +619,9 @@ export default [
           }, 
         ]
       },
-      { id: 6, 
+      { id: 7, 
         name: "7.3 RANDOM SEED",
-        value: "A random seed is used to perform repeatable experiments by reducing randomness in neural networks within PyTorch.",
+        value: "随机种子, 用于在 PyTorch 中减少神经网络的随机性，从而进行可重复的实验。",
         image: "", 
         content: [
           { id: 1, 
@@ -640,7 +638,7 @@ export default [
           }, 
         ]
       },
-      { id: 7, 
+      { id: 8, 
         name: ":: PyTorch 中的随机种子",
         value: "",
         image: "src/assets/chapter_one/randseedpy.jpeg", 
@@ -660,9 +658,9 @@ export default [
   { id: 8, 
     name: "Tensor on GPUs",
     sections: [
-      { id: 0, 
+      { id: 1, 
         name: "8. GPU 上的张量",
-        value: "Running tensors on GPUs can significantly speed up computation, especially when dealing with large tensors or training deep learning models.",
+        value: "在 GPU 上运行张量, 可以显著加快计算速度，特别是在处理大型张量或训练深度学习模型时。",
         image: "", 
         content: [
           { id: 1, 
@@ -671,7 +669,7 @@ export default [
           }
         ]
       }, 
-      { id: 1, 
+      { id: 2, 
         name: "8.1 在 GPU 上运行张量", 
         value: "要在 GPU 上运行 PyTorch 张量, 你需要将张量数据移动到 GPU, 然后使用 GPU 加速进行操作。这确实可以加快计算速度, 特别是在处理大型张量和深度学习模型时。", 
         image: "src/assets/chapter_one/gpu_run.jpeg", 
@@ -682,9 +680,9 @@ export default [
           },
         ]
       },
-      { id: 2, 
+      { id: 3, 
         name: "8.2 GPUs",
-        value: "A GPU, short from Graphics Processing Unit, is much faster at tensor computations compared to a CPU.",
+        value: "GPU (图形处理单元) 在张量计算方面比 CPU 快得多，特别是在处理大规模数据时。",
         image: "",
         content: [
           { id: 1, 
@@ -693,8 +691,8 @@ export default [
           }
         ]
       },
-      { id: 3, 
-        name: ":: GPU 特性",
+      { id: 4, 
+        name: ":: GPU 特征",
         value: "",
         image: "src/assets/chapter_one/gpu_feature.jpeg", 
         content: [
@@ -716,7 +714,7 @@ export default [
           },
         ]
       }, 
-      { id: 4, 
+      { id: 5, 
         name: "8.3 CUDA",
         value: "",
         image: "src/assets/chapter_one/gpu_cuda.jpg", 
@@ -727,8 +725,8 @@ export default [
           }
         ]
       },
-      { id: 5, 
-        name: ":: CUDA 特性",
+      { id: 6, 
+        name: ":: CUDA 特征",
         value: "", 
         image: "src/assets/chapter_one/gpu_cuda_feature.jpeg", 
         content: [
@@ -746,11 +744,11 @@ export default [
           },
           { id: 4, 
             title: "优势",
-            value: "CUDA 利用 GPU 的并行特性大大加快了计算密集型任务的速度。它支持跨多个 GPU 的扩展以获得更大的计算能力。此外, 还提供了丰富的工具、库和框架, 包括用于深度学习的 cuDNN 和用于线性代数的 cuBLAS, 使得开发更加容易。"
+            value: "CUDA 利用 GPU 的并行特征大大加快了计算密集型任务的速度。它支持跨多个 GPU 的扩展以获得更大的计算能力。此外, 还提供了丰富的工具、库和框架, 包括用于深度学习的 cuDNN 和用于线性代数的 cuBLAS, 使得开发更加容易。"
           },
         ]
       }, 
-      { id: 6, 
+      { id: 7, 
         name: "8.4 获取 GPUs",
         value: "",
         image: "src/assets/chapter_one/gpu_get.jpeg", 

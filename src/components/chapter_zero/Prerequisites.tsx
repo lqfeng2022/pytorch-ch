@@ -4,7 +4,7 @@ import chapterZero_ch from '../../data/chapterZero_ch'
 
 const Prerequisites = () => {
   const preres = chapterZero_ch[6].sections
-  const sTitle = "7. 准备工作 (Prerequisites)"
+  const sTitle = "7. 准备工作"
 
   return (
     <Box py={5}>

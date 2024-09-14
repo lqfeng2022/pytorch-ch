@@ -4,7 +4,7 @@ export default [
     sections: [
       { id: 0,
         name: "1. 分类问题", 
-        value: "A classification problem involves categorizing a object into one of n distinct classes.",
+        value: "分类问题，是将对象 (数据或者实例) 分配到 n 个不同类别中一个或多个的任务。",
         image: "",
         content: [
           { id: 1, 
@@ -38,7 +38,7 @@ export default [
       },
       { id: 2,
         name: "1.2 二元分类", 
-        value: "Binary classification is a fundamental task that assigns inputs to one of two distinct categories.",
+        value: "二元分类，是最简单的分类任务，它将对象分配到两个不同的类别之一。",
         image: "",
         content: [
           { id: 1, 
@@ -104,7 +104,7 @@ export default [
     sections: [
       { id: 0,
         name: "2. 损失函数: 二元交叉熵 (BCE)", 
-        value: "Binary cross-entropy is a popular loss function to measure the performance of binary classification problems.",
+        value: "二元交叉熵，一种常用的损失函数，多用于二元分类问题。",
         image: "",
         content: [
           { id: 1, 
@@ -134,7 +134,7 @@ export default [
       },
       { id: 2,
         name: ":: Cross Entropy", 
-        value: "Cross-entropy measures the difference between two probability distributions.",
+        value: "交叉熵，用于衡量两个概率分布之间的差异。",
         image: "",
         content: [
           { id: 1, 
@@ -149,7 +149,7 @@ export default [
       },
       { id: 3,
         name: ":: Entropy", 
-        value: "Entropy is a scientific concept often associated with disorder, randomness, or uncertainty.",
+        value: "熵，一个科学概念，通常与混乱、随机性或不确定性相关。",
         image: "",
         content: [
           { id: 1, 
@@ -169,14 +169,14 @@ export default [
     sections: [
       { id: 0,
         name: "3. Sigmoid 函数", 
-        value: "The sigmoid function takes any real-valued input and maps it to a value between 0 and 1.",
+        value: "Sigmoid 函数，将任何实数映射到 0 和 1 之间。",
         image: "",
         content: [
           { id: 1, 
             title: "",
             value: "Sigmoid 函数的作用是将任意输入转换为类似概率的输出, 这使其非常适合分类任务。"
           },
-          { id: 1, 
+          { id: 2, 
             title: "",
             value: "在我们的二元分类模型中, 我们将 Sigmoid 函数与二元交叉熵结合使用。首先, 使用 Sigmoid 函数将输入值转换为 0 到 1 之间的范围。然后, 将这些值传递给二元交叉熵函数以计算损失。之所以这样做, 是因为二元交叉熵是针对类似概率的值设计的, 而这些值的范围在 0 到 1 之间。"
           },
@@ -235,7 +235,7 @@ export default [
     sections: [
       { id: 0,
         name: "4. 反向传播算法",
-        value: "Backpropagation is a key algorithm for training neural networks, which involves the 'backward propagation of errors' to adjust weights and minimize loss.",
+        value: "反向传播，训练神经网络的核心算法，通过‘反向传播误差’来调整权重，以最小化损失。",
         image: "",
         content: [
           { id: 0, 
@@ -301,7 +301,7 @@ export default [
     sections: [
       { id: 0,
         name: "5. 激活函数: ReLU", 
-        value: "ReLU (Rectified Linear Unit) is a non-linear activation function commonly used in deep learning.",
+        value: "ReLU（线性整流单元），一种常用于深度学习的非线性激活函数。",
         image: "",
         content: [
           { id: 1, 

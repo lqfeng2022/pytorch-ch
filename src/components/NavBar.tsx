@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <Container 
       maxW='1200px' 
-      px='10px'
+      px='12px'
       position='fixed' 
       top='0' 
       left='0' 

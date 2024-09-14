@@ -23,6 +23,7 @@ const ReferGrid = ({ section }: { section: Reference }) => {
               <Text as="span">
                 <Link
                   href={p.link}
+                  as='i'
                   textDecoration='underline'
                   textUnderlineOffset='3px'
                   target='_blank'
