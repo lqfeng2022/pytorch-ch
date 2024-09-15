@@ -9,7 +9,7 @@ export default [
   },
   { id: 1,
     name: "章节 1: 张量",
-    quote: "麦克斯韦方程组..., 当使用时间作为第四维来重新书写时，这组相对复杂的八个方程就会简化为一个单一的张量方程。这就是物理学家所说的 ‘美’。", 
+    quote: "麦克斯韦方程组...，当使用时间作为第四维来重新书写时，这组相对复杂的八个方程就会简化为一个单一的张量方程。这就是物理学家所说的 ‘美’。", 
     author: "― 加來 道雄，物理学家",
     image: "src/assets/tesseract.jpg",
     title: "一个四维立方体（或称为超立方体）的模型 | Robert Brook/Science Photo Library Art", 
@@ -50,7 +50,7 @@ export default [
   { id: 6,
     name: "章节 6: 一个卷积神经网络模型",
     quote: "婴儿在学会说话之前先学会观察世界。视觉能力的发展是机器实现通用智能的前提条件。",
-    author: "― 杨立昆，知名于 CNNs",
+    author: "― 杨立昆，成名于 CNNs",
     image: "src/assets/generated_girl.webp",
     title: "计算机生成的女孩，近距离看非常漂亮。CGI肖像渲染和3D渲染, 由 Creative Photo Corner 创作",
     description: "计算机视觉的发展已经相当成熟，而 ChatGPT 的出现让图片生成领域更近一步。比如这张由计算机生成的人脸图像，几乎可以以假乱真。这些进展正在改变我们与技术的互动方式，使虚拟助手和机器人变得更加自然和引人入胜。除了技术领域之外，它们还挑战了我们在数字时代对身份、真实性和现实的认知。"
@@ -58,7 +58,7 @@ export default [
   { id: 7,
     name: "章节 7: 模型背后的数学原理 (III)",
     quote: "人工智能将成为21世纪最具变革性的技术。它将影响到每个行业和我们生活的各个方面。",
-    author: "― 黄仁勋，NVIDIA 开创者",
+    author: "― 黄仁勋，NVIDIA 创立者",
     image: "src/assets/naushika.jpg",
     title: "《风之谷》中的娜乌西卡, 由 books_baking_broadway 创作",
     description: "左侧的图像展示了由AI生成的现实版娜乌西卡 (来自《风之谷的娜乌西卡》中的角色)。通过使用图像合成等计算机视觉技术，AI可以通过学习大量现实图像和动画图片，将动画角色转化为现实风格的人物图像。"
@@ -66,7 +66,7 @@ export default [
   { id: 8,
     name: "章节 8: 一个视觉 Transformer 模型",
     quote: "当动物第一次进化出眼睛时，动物的生命突然变得主动了。",
-    author: "― 李飞飞，ImageNet 开创者",
+    author: "― 李飞飞，ImageNet 创立者",
     image: "src/assets/patch_embedding.jpg",
     title: "个性化的文字艺术肖像，周年纪念艺术印刷，由Scribbly Goose创作",
     description: "这是一张由文字生成的结婚照，文字的明暗变化构成了这幅结婚照的主要轮廓。而文字又描叙着他们之间的故事，很有创意的一幅作品。文字可以组成一幅图片，那么图片是否可以看作一个个文字。在计算机视觉中，将一张图片分割成一个个单独的 “文字” ，然后像自然语言处理一样对这些“文字”进行编码分析。"

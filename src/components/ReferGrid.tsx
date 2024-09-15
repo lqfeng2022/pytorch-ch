@@ -1,7 +1,6 @@
 import { Box, Text, Stack, HStack, Link } from '@chakra-ui/react'
 import ReferLinks from '../entities/referLinks'
 
-
 interface Reference {
   id: number,
   name: string,
@@ -21,15 +20,14 @@ const ReferGrid = ({ section }: { section: Reference }) => {
             </Text>
             <Box>
               <Text as="span">
-                <Link
-                  href={p.link}
-                  as='i'
-                  textDecoration='underline'
+                <Link 
+                  href={p.link} 
+                  textDecoration='underline' 
                   textUnderlineOffset='3px'
-                  target='_blank'
+                  target='_blank' 
                   _hover={{ textColor: 'tomato' }}
                 >
-                  {p.title}
+                  <Text as='i' >{p.title}</Text>
                 </Link>
                   { p.value && <Text as='span'>{', '}{p.value}</Text>}
               </Text>
