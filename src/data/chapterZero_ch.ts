@@ -4,7 +4,7 @@ export default [
     sections: [
       { id: 1,
         name: "1. 人工智能(AI)", 
-        value: "人工智能 (AI) 是计算机科学的一个领域，它让机器和系统能够执行模仿人类智能的任务。",
+        value: "人工智能 (AI) 是计算机科学的一个领域，它让机器具备人的智能。",
         image: "",
         content: [
           { id: 1, 
@@ -125,7 +125,7 @@ export default [
     sections: [
       { id: 0, 
         name: "2. 机器学习", 
-        value: "机器学习 (ML) 是人工智能的一部分，它能够在没有明确指令的情况下自主完成特定任务。",
+        value: "机器学习，是人工智能的一个分支，它能够在没有明确指令的情况下自主完成特定任务。",
         image: "",
         content: [
           { id: 1, 
@@ -202,7 +202,7 @@ export default [
     sections: [
       { id: 0, 
         name: "3. 深度学习", 
-        value: "深度学习 (DL) 是机器学习的一部分，它通过使用多层神经网络来分析数据中的复杂模式。",
+        value: "深度学习，是机器学习的一部分，它通过使用多层神经网络来分析数据中的复杂模式。",
         image: "",
         content: [
           { id: 1, 
@@ -337,7 +337,7 @@ export default [
     sections: [
       { id: 0, 
         name: "4. 神经网络", 
-        value: "神经网络 (NN) 是一种模仿人脑处理信息和神经元连接方式的算法。",
+        value: "神经网络，是一种模仿人脑处理信息和神经元连接方式的数学模型。",
         image: "",
         content: [
           { id: 1, 
@@ -364,7 +364,7 @@ export default [
       },
       { id: 1,
         name: "4.1 神经网路架构",
-        value: "A neural network consists of layers of interconnected units called neurons or nodes. Here's a breakdown of its basic components:",
+        value: "一个神经网络，是由多层相互连接的神经元组成的，这里我们简单说说其基本组成要素:",
         image: "src/assets/chapter_zero/nnmodel.jpeg",
         content: [
           { id: 1, 

@@ -18,7 +18,7 @@ export default [
         ]
       },
       { id: 1,
-        name: "1.1 Classification Probelm", 
+        name: "1.1 分类问题", 
         value: "",
         image: "src/assets/chapter_five/classific.jpeg",
         content: [
@@ -118,7 +118,7 @@ export default [
         ],
       },
       { id: 1,
-        name: ":: Binary Cross Entropy Formula", 
+        name: ":: BCE 损失函数方程", 
         value: "",
         image: "src/assets/chapter_five/bceFormula.jpeg",
         content: [
@@ -133,7 +133,7 @@ export default [
         ],
       },
       { id: 2,
-        name: ":: Cross Entropy", 
+        name: ":: 交叉熵 (Cross Entropy)", 
         value: "交叉熵，用于衡量两个概率分布之间的差异。",
         image: "",
         content: [
@@ -148,7 +148,7 @@ export default [
         ],
       },
       { id: 3,
-        name: ":: Entropy", 
+        name: ":: 熵 (Entropy)", 
         value: "熵，一个科学概念，通常与混乱、随机性或不确定性相关。",
         image: "",
         content: [

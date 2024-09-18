@@ -4,7 +4,7 @@ export default [
     sections: [
       { id: 1,
         name: "1. 线性回归 (Linear Regression)", 
-        value: "线性回归, 是一种统计方法，多用于两个线性关系变量之间的建模",
+        value: "线性回归，是一种统计方法，多用于两个线性关系变量之间的建模",
         image: "",
         content: [
           { id: 1, 
@@ -35,7 +35,7 @@ export default [
     sections: [
       { id: 1,
         name: "2. 正态分布 (Normal Distribution)", 
-        value: "正态分布, 是一个连续分布的概率曲线，其对象多为某种真实存在的随机变量，通常呈钟形分布。",
+        value: "正态分布，是一个连续分布的概率曲线，其对象多为某种真实存在的随机变量，通常呈钟形分布。",
         image: "",
         content: [
           { id: 1, 
@@ -105,7 +105,7 @@ export default [
     sections: [
       { id: 1,
         name: "3. 损失函数 (MSE)",
-        value: "损失函数, 多用于评估模型预测的效果，数值越低，模型表现越好。",
+        value: "损失函数，多用于评估模型预测的效果，数值越低，模型表现越好。",
         image: "",
         content: [
           { id: 1,

@@ -29,7 +29,7 @@ function HomePage() {
       <Stack spacing={5} pb={5}>
         { showContent && <>
           <Image src={bookImage} alt='Book Cover'/>
-          <Text>哈啰! 为了向大家介绍人工智能，我写了这个网站，欢迎入坑。如果你对 ChatGPT 这种大语言模型感兴趣的话, 可以先了解一下其背后的核心架构: Transformer。这里，我通过构建5个基础模型，逐步为大家介绍深度学习的常见架构，以及模型背后的数学原理。</Text>
+          <Text>哈啰! 为了向大家介绍人工智能，我写了这个网站，欢迎入坑。这里，我通过构建5个AI模型，向大家介绍深度学习的基本知识，以及模型背后的数学原理。如果你对 ChatGPT 这种大语言模型感兴趣的话, 可以先了解一下其背后的核心架构: Transformer。本书最后一个模型会使用 Transformer 架构构建一个英文到中文的翻译模型。</Text>
           {!isLargeScreen && 
             <Button 
               bg='tomato'

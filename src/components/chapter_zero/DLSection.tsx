@@ -14,7 +14,7 @@ const DLSection = () => {
       <LeftGrid section={comparing}/>
       <Box py={5}>
         <Text as='b' fontSize='lg' color='gray.600'>
-          3.2 Deep Learing V.S. Machine Learing
+          3.2 深度学习 vs. 机器学习
         </Text>
         <BaseGrid section={mlmodel}/>
         <BaseGrid section={dlmodel}/>

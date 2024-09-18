@@ -49,7 +49,7 @@ export default [
     sections: [
       { id: 0, 
         name: "2. 构建模型", 
-        value: "构建深度学习模型时，我们首先需要根据具体的问题，选择一个合适的神经网络，这时第一步。",
+        value: "构建深度学习模型时，我们首先需要根据具体的问题，选择一个合适的神经网络，这是第一步。",
         image: "",
         content: [
           { id: 1,
@@ -59,7 +59,7 @@ export default [
         ]
       },
       { id: 1, 
-        name: ":: Construct model Architecture", 
+        name: ":: 设计模型架构", 
         value: "",
         image: "src/assets/chapter_four/build_architecture.jpeg",
         content: [
@@ -70,7 +70,7 @@ export default [
         ]
       },
       { id: 2, 
-        name: ":: Build a Model with PyTorch", 
+        name: ":: 使用 PyTorch 实现模型架构", 
         value: "",
         image: "src/assets/chapter_four/build_model.jpeg",
         content: [
@@ -101,7 +101,7 @@ export default [
         ]
       },
       { id: 1, 
-        name: ":: Build a training loop", 
+        name: ":: 构建模型训练循环", 
         value: "",
         image: "src/assets/chapter_four/train_model.jpeg",
         content: [
@@ -120,7 +120,7 @@ export default [
         ]
       },
       { id: 2, 
-        name: ":: Test the trained Model", 
+        name: ":: 评估模型训练效果", 
         value: "",
         image: "src/assets/chapter_four/train_visual.jpeg",
         content: [
@@ -135,7 +135,7 @@ export default [
         ]
       },
       { id: 3, 
-        name: ":: Check loss curves", 
+        name: ":: 确实损失曲线", 
         value: "",
         image: "src/assets/chapter_four/train_loss.jpeg",
         content: [
@@ -166,7 +166,7 @@ export default [
         ]
       },
       { id: 1, 
-        name: ":: How to Improve a Model", 
+        name: ":: 如何改进一个模型", 
         value: "",
         image: "src/assets/chapter_four/improve_model.jpeg",
         content: [
