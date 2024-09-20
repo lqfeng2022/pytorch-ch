@@ -42,8 +42,8 @@ const ChapterOne = () => {
       <div id={index.link}><TensorIndex/></div>
       <div id={reproduc.link}><TensorReproducibility/></div>
       <div id={run.link}><TensorRun/></div>
-      <Flex align='center' h='80px'>
-        <Divider variant='thick'/>
+      <Flex align='center' h='100px'>
+        <Divider variant='middle'/>
       </Flex>
       <FootLinks l={l} ll={ll} r={r} rl={rl}/>
     </Container>

@@ -7,7 +7,7 @@ const Prerequisites = () => {
   const sTitle = "7. 准备工作"
 
   return (
-    <Box py={5}>
+    <Box pt={10} pb={5}>
       <Text as='b' fontSize='lg' color='gray.600'>{sTitle}</Text>
       <Image py={3} src={prere_img}/>
       <Stack spacing={4}>

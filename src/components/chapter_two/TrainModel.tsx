@@ -5,6 +5,7 @@ import BaseGrid from '../BaseGrid'
 import LeftGrid from '../LeftGrid'
 import RightGrid from '../RightGrid'
 import chapterTwo_ch from '../../data/chapterTwo_ch'
+import { Box } from '@chakra-ui/react'
 
 const TrainModel = () => {
   const [ define, loop, visual_before, visual_train, visual_test, loss_curves 
@@ -13,7 +14,7 @@ const TrainModel = () => {
   ] = codeLineModel.slice(5, 9).map(obj => obj.code)
 
   return (
-    <div>
+    <Box pt={5}>
       <Definition title={define.name} definition={define}/>
       <BaseGrid section={loop}/>
       <CodeDisplay codes={loopCode}/>
@@ -24,7 +25,7 @@ const TrainModel = () => {
       <CodeDisplay codes={testCode}/>
       <BaseGrid section={loss_curves}/>
       <CodeDisplay codes={losscurvesCode}/>
-    </div>
+    </Box>
   )
 }
 

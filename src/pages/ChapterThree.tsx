@@ -36,8 +36,8 @@ const ChapterThree = () => {
       <div id={descent.link}><GradientDescent/></div>
       <div id={stochast.link}><StochasticGD/></div>
       <div id={lr.link}><LearningRate/></div>
-      <Flex align='center' h='80px'>
-        <Divider variant='thick'/>
+      <Flex align='center' h='100px'>
+        <Divider variant='middle'/>
       </Flex>
       <FootLinks l={l} ll={ll} r={r} rl={rl}/>
     </Container>

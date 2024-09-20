@@ -114,7 +114,7 @@ export default [
       { id: 4, name: "改进模型", link: "improve-a-model" },
       { id: 5, name: "- 第一个改进模型", link: "the-1st-model" },
       { id: 6, name: "- 第二个改进模型", link: "the-2nd-model" },
-      { id: 7, name: "- 第三个该惊模型", link: "the-3rd-model" },
+      { id: 7, name: "- 第三个改进模型", link: "the-3rd-model" },
       { id: 8, name: "保存模型", link: "save-a-model" },
     ],
     description: [
@@ -131,8 +131,8 @@ export default [
       { id: 1, name: "分类问题", link: "classification-task" },
       { id: 2, name: "损失函数: 二元交叉熵 (BCE)", link: "loss-function-bce" },
       { id: 3, name: "Sigmoid函数", link: "sigmoid-function" },
-      { id: 4, name: "反向传播算法", link: "backpropagation" },
-      { id: 5, name: "激活函数: ReLU", link: "activation-function-relu" }
+      { id: 4, name: "激活函数: ReLU", link: "activation-function-relu" },
+      { id: 5, name: "反向传播算法", link: "backpropagation" },
     ],
     description: [
       { id: 1, 

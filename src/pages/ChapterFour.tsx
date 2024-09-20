@@ -46,8 +46,8 @@ const ChapterFour = () => {
       <div id={modelTwo.link}><TheSecondModel/></div>
       <div id={modelThree.link}><TheThirdModel/></div>
       <div id={save.link}><SaveModel/></div>
-      <Flex align='center' h='80px'>
-        <Divider variant='thick'/>
+      <Flex align='center' h='100px'>
+        <Divider variant='middle'/>
       </Flex>
       <FootLinks l={l} ll={ll} r={r} rl={rl}/>
     </Container>

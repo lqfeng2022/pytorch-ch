@@ -4,6 +4,7 @@ import CodeDisplay from '../CodeDisplay'
 import RightGrid from '../RightGrid'
 import LeftGrid from '../LeftGrid'
 import chapterFour_ch from '../../data/chapterFour_ch'
+import { Box } from '@chakra-ui/react'
 
 const TrainModel = () => {
   const [ defin, train, test, loss ] = chapterFour_ch[2].sections
@@ -11,7 +12,7 @@ const TrainModel = () => {
   ] = codeBinaryModel.slice(4, 7).map(obj => obj.code)
 
   return (
-    <div>
+    <Box pt={5}>
       <Definition title={defin.name} definition={defin}/>
       <RightGrid section={train}/>
       <CodeDisplay codes={trainCode}/>
@@ -19,7 +20,7 @@ const TrainModel = () => {
       <CodeDisplay codes={testCode}/>
       <RightGrid section={loss}/>
       <CodeDisplay codes={lossCode}/>
-    </div>
+    </Box>
   )
 }
 

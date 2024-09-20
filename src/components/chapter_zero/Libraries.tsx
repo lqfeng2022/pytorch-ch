@@ -6,10 +6,10 @@ const Libraries = () => {
   const libs = chapterZero_ch[4].sections
   
   return (
-    <Box py={3}>
+    <Box pt={10}>
       <Text as='b' fontSize='lg' color='gray.600'>5. 框架和库 (Libraries)</Text>
       <Image py={3} src={libraries}/>
-      <Stack spacing={4}>
+      <Stack spacing={3}>
         {libs.map((p) => 
           <div key={p.id}>
             <Text as='b'>{p.name}</Text>

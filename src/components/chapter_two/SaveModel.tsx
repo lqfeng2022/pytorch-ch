@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react'
 import chapterTwo_ch from '../../data/chapterTwo_ch'
 import codeLineModel from '../../data/codeLineModel'
 import CodeDisplay from '../CodeDisplay'
@@ -10,13 +11,13 @@ const SaveModel = () => {
   const [ savecode, loadcode ] = codeLineModel.slice(9, 11).map(obj => obj.code)
 
   return (
-    <div>
+    <Box pt={5}>
       <Definition title={define.name} definition={define}/>
       <LeftGrid section={save}/>
       <CodeDisplay codes={savecode}/>
       <RightGrid section={load}/>
       <CodeDisplay codes={loadcode}/>
-    </div>
+    </Box>
   )
 }
 

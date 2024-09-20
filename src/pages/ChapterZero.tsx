@@ -44,8 +44,8 @@ const ChapterZero = () => {
       <div id={pt.link}><PTSection/></div>
       <div id={pre.link}><Prerequisites/></div>
       <div id={take.link}><BaseGrid section={takeCourse}/></div>
-      <Flex align='center' justifyContent='center' h='80px'>
-        <Divider variant='thick'/>
+      <Flex align='center' justifyContent='center' h='100px'>
+        <Divider variant='middle'/>
       </Flex>
       <FootLinks l={l} ll={ll} r={r} rl={rl}/>
     </Container>

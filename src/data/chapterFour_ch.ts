@@ -135,7 +135,7 @@ export default [
         ]
       },
       { id: 3, 
-        name: ":: 确实损失曲线", 
+        name: ":: 确认损失曲线", 
         value: "",
         image: "src/assets/chapter_four/train_loss.jpeg",
         content: [

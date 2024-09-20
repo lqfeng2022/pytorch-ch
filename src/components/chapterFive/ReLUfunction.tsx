@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react'
 import chapterFive_ch from '../../data/chapterFive_ch'
 import BaseGrid from '../BaseGrid'
 import Definition from '../Definition'
@@ -7,11 +8,11 @@ const ReLUfunction = () => {
   const [ defin, formula, features ]= chapterFive_ch[3].sections
 
   return (
-    <div>
+    <Box pt={5}>
       <Definition title={defin.name} definition={defin}/>
       <LeftGrid section={formula}/>
       <BaseGrid section={features}/>
-    </div>
+    </Box>
   )
 }
 

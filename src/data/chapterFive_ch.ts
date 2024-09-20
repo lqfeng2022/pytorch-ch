@@ -230,7 +230,61 @@ export default [
       },
     ],
   },
-  { id: 3,
+  { id: 3, 
+    name: "ReLU Function",
+    sections: [
+      { id: 0,
+        name: "5. 激活函数: ReLU", 
+        value: "ReLU（线性整流单元），一种常用于深度学习的非线性激活函数。",
+        image: "",
+        content: [
+          { id: 1, 
+            title: "",
+            value: "ReLU 函数在深度学习中被广泛使用, 特别是在卷积神经网络 (CNN) 和其他各种神经网络架构中。"
+          },
+        ]
+      },
+      { id: 1,
+        name: ":: ReLU 函数方程", 
+        value: "",
+        image: "src/assets/chapter_five/reluFormula.jpeg",
+        content: [
+          { id: 1, 
+            title: "",
+            value: "ReLU 函数有一个简单的公式：它输出 0 和输入值 x 之间的最大值。因此, ReLU 的输出总是非负的, 范围从 0 到正无穷。对于正输入, 函数是线性的；对于负输入, 输出为 0。"
+          },
+          { id: 2, 
+            title: "",
+            value: "总体来说, ReLU 在许多深度学习模型中受到青睐, 因为它简单、高效, 并且能够加快和提升深度神经网络的训练效果。"
+          },
+        ]
+      },
+      { id: 2,
+        name: ":: ReLU 函数特性", 
+        value: "",
+        image: "src/assets/chapter_five/reluFeature.jpeg",
+        content: [
+          { id: 1, 
+            title: "非线性",
+            value: "虽然 ReLU 函数简单且分段线性, 但它为网络引入了非线性, 这对学习复杂模式至关重要。"
+          },
+          { id: 2, 
+            title: "计算效率高",
+            value: "ReLU 仅激活输入值为正的神经元, 导致稀疏激活。这种稀疏性可以提高计算效率。"
+          },
+          { id: 3, 
+            title: "无梯度消失问题",
+            value: "与 sigmoid 或 tanh 函数不同, ReLU 避免了正输入的梯度消失问题, 从而加速训练并在深度网络中提高性能。"
+          },
+          { id: 4, 
+            title: "ReLU 失效问题",
+            value: "然而, 如果输入值大多为负数, 神经元可能会变得不活跃, 输出为 0, 实际上停止学习。这一问题被称为“ReLU失效”问题。"
+          },
+        ]
+      },
+    ],
+  },
+  { id: 4,
     name: "BackPropagation",
     sections: [
       { id: 0,
@@ -295,59 +349,5 @@ export default [
         ]
       },
     ]
-  },
-  { id: 4, 
-    name: "ReLU Function",
-    sections: [
-      { id: 0,
-        name: "5. 激活函数: ReLU", 
-        value: "ReLU（线性整流单元），一种常用于深度学习的非线性激活函数。",
-        image: "",
-        content: [
-          { id: 1, 
-            title: "",
-            value: "ReLU 函数在深度学习中被广泛使用, 特别是在卷积神经网络 (CNN) 和其他各种神经网络架构中。"
-          },
-        ]
-      },
-      { id: 1,
-        name: ":: ReLU 函数方程", 
-        value: "",
-        image: "src/assets/chapter_five/reluFormula.jpeg",
-        content: [
-          { id: 1, 
-            title: "",
-            value: "ReLU 函数有一个简单的公式：它输出 0 和输入值 x 之间的最大值。因此, ReLU 的输出总是非负的, 范围从 0 到正无穷。对于正输入, 函数是线性的；对于负输入, 输出为 0。"
-          },
-          { id: 2, 
-            title: "",
-            value: "总体来说, ReLU 在许多深度学习模型中受到青睐, 因为它简单、高效, 并且能够加快和提升深度神经网络的训练效果。"
-          },
-        ]
-      },
-      { id: 2,
-        name: ":: ReLU 函数特性", 
-        value: "",
-        image: "src/assets/chapter_five/reluFeature.jpeg",
-        content: [
-          { id: 1, 
-            title: "非线性",
-            value: "虽然 ReLU 函数简单且分段线性, 但它为网络引入了非线性, 这对学习复杂模式至关重要。"
-          },
-          { id: 2, 
-            title: "计算效率高",
-            value: "ReLU 仅激活输入值为正的神经元, 导致稀疏激活。这种稀疏性可以提高计算效率。"
-          },
-          { id: 3, 
-            title: "无梯度消失问题",
-            value: "与 sigmoid 或 tanh 函数不同, ReLU 避免了正输入的梯度消失问题, 从而加速训练并在深度网络中提高性能。"
-          },
-          { id: 4, 
-            title: "ReLU 失效问题",
-            value: "然而, 如果输入值大多为负数, 神经元可能会变得不活跃, 输出为 0, 实际上停止学习。这一问题被称为“ReLU失效”问题。"
-          },
-        ]
-      },
-    ],
   },
 ]
