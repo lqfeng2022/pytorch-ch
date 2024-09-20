@@ -190,7 +190,7 @@ export default [
     name: "The 1st Model (+ReLU)",
     sections: [
       { id: 0, 
-        name: "4.1 第一个改进模型 (+ReLU)", 
+        name: "5. 第一个改进模型 (+ReLU)", 
         value: "",
         image: "src/assets/chapter_four/improve_one.jpeg",
         content: [
@@ -254,7 +254,7 @@ export default [
     name: "The 2nd Model (+epochs)",
     sections: [
       { id: 0, 
-        name: "4.2 第二个改进模型 (+epochs)", 
+        name: "6. 第二个改进模型 (+epochs)", 
         value: "",
         image: "src/assets/chapter_four/improve_two.jpeg",
         content: [
@@ -307,7 +307,7 @@ export default [
     name: "The Third Model (->lr)",
     sections: [
       { id: 0, 
-        name: "4.3 第三个改进模型 (->lr)", 
+        name: "7. 第三个改进模型 (->lr)", 
         value: "",
         image: "src/assets/chapter_four/improve_three.jpeg",
         content: [
@@ -356,7 +356,7 @@ export default [
     name: "Save a Model",
     sections: [
       { id: 0, 
-        name: "5. 保存模型", 
+        name: "8. 保存模型", 
         value: "在保存模型之前，我们需要选择表现最好的那个。",
         image: "",
         content: [
