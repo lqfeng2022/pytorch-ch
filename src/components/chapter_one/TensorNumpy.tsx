@@ -1,10 +1,10 @@
-import chapterOne from '../../data/chapterOne'
+import chapterOne_ch from '../../data/chapterOne_ch'
 import pythonCode from '../../data/codeTensors'
 import BaseGrid from '../BaseGrid'
 import CodeDisplay from '../CodeDisplay'
 
 const TensorNumpy = () => {
-  const [tensor_numpy] = chapterOne[6].sections
+  const [tensor_numpy] = chapterOne_ch[6].sections
   const tensornumpyCode = pythonCode[14].code
 
   return (

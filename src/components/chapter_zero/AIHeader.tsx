@@ -1,8 +1,8 @@
 import { Center, Heading, Image, Stack, Text } from '@chakra-ui/react'
-import covers from '../../data/covers'
+import covers_ch from '../../data/covers_ch'
 
 const Header = () => {
-  const cover = covers[0]
+  const cover = covers_ch[0]
 
   return (
     <>
