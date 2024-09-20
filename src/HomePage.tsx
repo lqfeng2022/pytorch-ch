@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Center, 
+  HStack, 
   Image, 
   Stack, 
   Text,
@@ -28,20 +29,26 @@ function HomePage() {
     <Center>
       <Stack spacing={5} pb={5}>
         { showContent && <>
+          <Text>哈啰! 为了探索 ChatGPT 的奥秘，我写了这个网站。</Text>
+          <HStack justifyContent='space-between'>
+            { !isLargeScreen &&
+              <Text 
+                fontSize='xl' 
+                color='gray.500' 
+                borderBottom='1px solid #FEB2B2'
+                onClick={handleShow}
+                _hover={{ 
+                  color: 'tomato', 
+                  cursor: 'pointer',
+                  transform: 'translateX(5px)',
+                  transition: 'transform .15s ease-in',
+                }}
+              >
+                欢迎入坑 :
+              </Text>
+            }
+          </HStack>
           <Image src={bookImage} alt='Book Cover'/>
-          <Text>哈啰! 为了向大家介绍人工智能，我写了这个网站，欢迎入坑。这里，我通过构建5个AI模型，向大家介绍深度学习的基本知识，以及模型背后的数学原理。如果你对 ChatGPT 这种大语言模型感兴趣的话, 可以先了解一下其背后的核心架构: Transformer。本书最后一个模型会使用 Transformer 架构构建一个英文到中文的翻译模型。</Text>
-          {!isLargeScreen && 
-            <Button 
-              bg='tomato'
-              color='white'
-              w='100px' 
-              h='35px' 
-              onClick={handleShow}
-              _hover={{ bg: '#E53E3E' }}
-            >
-              目 录
-            </Button>
-          }
         </>}
         {useBreakpointValue({base: show, lg: false}) && 
           <Box 
@@ -49,18 +56,18 @@ function HomePage() {
             position='relative'
             pb='70px'
           >
+            <HStack justifyContent='space-between'>
+              <Text fontWeight='bold' color='gray.500' borderBottom='1px solid red'>本书目录:</Text>
+              <Button
+                colorScheme='gray'
+                color='gray.500'
+                w='80px'
+                h='35px'
+                _hover={{ bg: '#FF6347', color: '#FFFFFF' }}
+                onClick={handleHide}
+              >CLOSE</Button>
+            </HStack>
             <BookList/>
-            <Button 
-              colorScheme='gray' 
-              w='80px' 
-              h='35px' 
-              onClick={handleHide}
-              position='absolute'
-              right='0'
-              bottom='30px'
-            >
-              CLOSE
-            </Button>
           </Box>
         }
       </Stack>
