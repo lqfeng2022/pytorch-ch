@@ -1,3 +1,21 @@
+import {
+  workflow, 
+  workflow_explain,
+  prepare_create,
+  prepare_split,
+  prepare_visual,
+  build_model,
+  build_architecture,
+  build_visual,
+  train_model,
+  train_visual_before,
+  train_visual_after,
+  train_loss_curves,
+  train_visual_test,
+  save_model,
+  save_model_load
+} from '../assets/chapter_two'
+
 export default [
   { id: 0, 
     name: "PyTorch Workflow",
@@ -16,7 +34,7 @@ export default [
       { id: 1,
         name: ":: 工作流程预览", 
         value: "",
-        image: "src/assets/chapter_two/workflow.jpeg",
+        image: workflow,
         content: [
           { id: 1, 
             title: "",
@@ -27,7 +45,7 @@ export default [
       { id: 2,
         name: ":: 工作流程步骤", 
         value: "",
-        image: "src/assets/chapter_two/workflow_explain.jpeg",
+        image: workflow_explain,
         content: [
           { id: 1, 
             title: "准备数据",
@@ -70,7 +88,7 @@ export default [
       { id: 1, 
         name: "1.1 创建数据", 
         value: "",
-        image: "src/assets/chapter_two/prepare_create.jpeg",
+        image: prepare_create,
         content: [
           { id: 1,
             title: "",
@@ -85,7 +103,7 @@ export default [
       { id: 2, 
         name: "1.2 分割数据", 
         value: "",
-        image: "src/assets/chapter_two/prepare_split.jpeg",
+        image: prepare_split,
         content: [
           { id: 1,
             title: "",
@@ -100,7 +118,7 @@ export default [
       { id: 3, 
         name: ":: 数据可视化 ", 
         value: "",
-        image: "src/assets/chapter_two/prepare_visual.png",
+        image: prepare_visual,
         content: [
           { id: 1,
             title: "",
@@ -135,7 +153,7 @@ export default [
       { id: 1, 
         name: ":: 创建一个模型类", 
         value: "",
-        image: "src/assets/chapter_two/build_model.jpeg",
+        image: build_model,
         content: [
           { id: 1,
             title: "",
@@ -150,7 +168,7 @@ export default [
       { id: 2, 
         name: ":: 模型架构", 
         value: "",
-        image: "src/assets/chapter_two/build_architecture.jpeg",
+        image: build_architecture,
         content: [
           { id: 1,
             title: "",
@@ -161,7 +179,7 @@ export default [
       { id: 3, 
         name: ":: 模型可视化", 
         value: "",
-        image: "src/assets/chapter_two/build_visual.png",
+        image: build_visual,
         content: [
           { id: 1,
             title: "",
@@ -188,7 +206,7 @@ export default [
       { id: 1, 
         name: "3.1 创建一个训练循环", 
         value: "",
-        image: "src/assets/chapter_two/train_model.jpeg",
+        image: train_model,
         content: [
           { id: 1,
             title: "选择损失函数",
@@ -215,7 +233,7 @@ export default [
       { id: 2, 
         name: ":: 可视化训练模型", 
         value: "",
-        image: "src/assets/chapter_two/train_visual_before.jpeg",
+        image: train_visual_before,
         content: [
           { id: 1,
             title: "",
@@ -226,7 +244,7 @@ export default [
       { id: 3, 
         name: ":: 可视化训练后的模型", 
         value: "",
-        image: "src/assets/chapter_two/train_visual_after.jpeg",
+        image: train_visual_after,
         content: [
           { id: 1,
             title: "",
@@ -237,7 +255,7 @@ export default [
       { id: 4, 
         name: ":: 测试模型", 
         value: "",
-        image: "src/assets/chapter_two/train_visual_testd.jpeg",
+        image: train_visual_test,
         content: [
           { id: 1,
             title: "",
@@ -248,7 +266,7 @@ export default [
       { id: 5, 
         name: ":: 确认损失曲线", 
         value: "损失曲线显示了模型在训练过程中损失数值的变化，这两条训练数据下的损失曲线和测试数据下的损失曲线。图中可以看出, 这两条曲线下降趋势明显且最终都收敛, 这表明模型在学习和泛化方面表现良好。",
-        image: "src/assets/chapter_two/train_loss_curves.jpeg",
+        image: train_loss_curves,
         content: [
           { id: 1,
             title: "训练损失值 (蓝色)",
@@ -287,7 +305,7 @@ export default [
       { id: 1, 
         name: "4.1 保存模型", 
         value: "",
-        image: "src/assets/chapter_two/save_model.jpeg",
+        image: save_model,
         content: [
           { id: 1,
             title: "",
@@ -298,7 +316,7 @@ export default [
       { id: 2, 
         name: "4.2 下载模型", 
         value: "",
-        image: "src/assets/chapter_two/save_model_load.jpeg",
+        image: save_model_load,
         content: [
           { id: 1,
             title: "",

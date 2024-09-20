@@ -1,3 +1,28 @@
+import { 
+  ai_why, 
+  ai_turningTest,
+  ai_expertSystem,
+  ai_connectionism,
+  ai_convolutinal,
+  ai_alphgo,
+  ai_openai,
+  ml_vs_traditonal,
+  ml_svms,
+  ml_decisionTree,
+  ml_anns,
+  dl_vs_ml_ai,
+  dl_cat_ml,
+  dl_cat_dl,
+  dl_vs_ml,
+  dl_apps,
+  nn_model,
+  nn_neurons,
+  pt_features,
+  pt_trends,
+  pt_companies,
+  how_take_course,
+} from '../assets/chapter_zero'
+
 export default [
   { id: 1, 
     name: "人工智能",
@@ -24,7 +49,7 @@ export default [
       { id: 2, 
         name: "1.1 为什么我们需要了解 AI?",
         value: "",
-        image: "src/assets/chapter_zero/aiwhy.jpeg",
+        image: ai_why,
         content: [
           { id: 1, 
             title: "ChatGPT", 
@@ -47,7 +72,7 @@ export default [
       { id: 3,
         name: ":: 图灵测试", 
         value: "",
-        image: "src/assets/chapter_zero/turingtest.jpeg",
+        image: ai_turningTest,
         content: [
           { id: 1, 
             title: "",
@@ -62,7 +87,7 @@ export default [
       { id: 4, 
         name: ":: 专家系统", 
         value: "",
-        image: "src/assets/chapter_zero/expertsystem.jpeg",
+        image: ai_expertSystem,
         content: [
           { id: 1, 
             title: "",
@@ -73,7 +98,7 @@ export default [
       { id: 5, 
         name: ":: Connectionism + 神经网络", 
         value: "",
-        image: "src/assets/chapter_zero/connectionism.jpeg",
+        image: ai_connectionism,
         content: [
           { id: 1, 
             title: "",
@@ -88,7 +113,7 @@ export default [
       { id: 6, 
         name: ":: 卷积神经网络 (CNN)", 
         value: "",
-        image: "src/assets/chapter_zero/cnn.jpeg",
+        image: ai_convolutinal,
         content: [
           { id: 1, 
             title: "",
@@ -99,7 +124,7 @@ export default [
       { id: 7, 
         name: ":: AlphaGo", 
         value: "",
-        image: "src/assets/chapter_zero/alphago.jpeg",
+        image: ai_alphgo,
         content: [
           { id: 1,
             title: "",
@@ -110,7 +135,7 @@ export default [
       { id: 8, 
         name: ":: ChatGPT", 
         value: "",
-        image: "src/assets/chapter_zero/openai.jpeg",
+        image: ai_openai,
         content: [
           { id: 1, 
             title: "",
@@ -149,7 +174,7 @@ export default [
       { id: 1,
         name: "2.1 机器学习 vs. 传统编程",
         value: "",
-        image: "src/assets/chapter_zero/mlcomparing.jpeg",
+        image: ml_vs_traditonal,
         content: [
           { id: 1, 
             title: "传统编程", 
@@ -164,7 +189,7 @@ export default [
       { id: 2, 
         name: ":: 向量支持机 (SVMs)", 
         value: "",
-        image: "src/assets/chapter_zero/svms.jpeg",
+        image: ml_svms,
         content: [
           { id: 1, 
             title: "",
@@ -174,7 +199,7 @@ export default [
       { id: 3, 
         name: ":: 决策树",
         value: "",
-        image: "src/assets/chapter_zero/decisiontree.jpeg",
+        image: ml_decisionTree,
         content: [
           { id: 1, 
             title: "",
@@ -184,7 +209,7 @@ export default [
       { id: 4, 
         name: ":: 人工神经网络(ANNs)", 
         value: "",
-        image: "src/assets/chapter_zero/anns.jpeg",
+        image: ml_anns,
         content: [
           { id: 1, 
             title: "",
@@ -230,7 +255,7 @@ export default [
       { id: 1, 
         name: "3.1 深度学习 < 机器学习 < AI",
         value: "",
-        image: "src/assets/chapter_zero/relationships.jpeg",
+        image: dl_vs_ml_ai,
         content: [
           { id: 1, 
             title: "", 
@@ -241,7 +266,7 @@ export default [
       { id: 2, 
         name: ":: 机器学习模型(决策树)",
         value: "",
-        image: "src/assets/chapter_zero/mlcat.jpeg",
+        image: dl_cat_ml,
         content: [
           { id: 1, 
             title: "",
@@ -260,7 +285,7 @@ export default [
       { id: 3, 
         name: ":: 深度学习模型 (神经网络)",
         value: "",
-        image: "src/assets/chapter_zero/dlcat.jpeg",
+        image: dl_cat_dl,
         content: [
           { id: 1, 
             title: "",
@@ -279,7 +304,7 @@ export default [
       { id: 4, 
         name: "3.3 机器学习和深度学习的区别",
         value: "",
-        image: "src/assets/chapter_zero/mldl.jpeg",
+        image: dl_vs_ml,
         content: [
           { id: 1, 
             title: "结构化数据",
@@ -310,7 +335,7 @@ export default [
       { id: 5,
         name: "3.4 深度学习应用",
         value: "",
-        image: "src/assets/chapter_zero/dlapps.jpeg",
+        image: dl_apps,
         content: [
           { id: 1, 
             title: "图像识别",
@@ -365,7 +390,7 @@ export default [
       { id: 1,
         name: "4.1 神经网路架构",
         value: "一个神经网络，是由多层相互连接的神经元组成的，这里我们简单说说其基本组成要素:",
-        image: "src/assets/chapter_zero/nnmodel.jpeg",
+        image: nn_model,
         content: [
           { id: 1, 
             title: "神经元",
@@ -392,7 +417,7 @@ export default [
       { id: 2,
         name: "4.2 什么是大脑神经元?",
         value: "",
-        image: "src/assets/chapter_zero/neurons.jpeg",
+        image: nn_neurons,
         content: [
           { id: 1, 
             title: "神经元",
@@ -515,7 +540,7 @@ export default [
       { id: 1,
         name: "6.1 PyTorch 特征",
         value: "",
-        image: "src/assets/chapter_zero/ptfeatures.jpeg",
+        image: pt_features,
         content: [
           { id: 1, 
             title: "动态计算图",
@@ -543,7 +568,7 @@ export default [
       { id: 2,
         name: "6.2 框架趋势",
         value: "",
-        image: "src/assets/chapter_zero/pttrends.jpeg",
+        image: pt_trends,
         content: [
           { id: 1, 
             title: "",
@@ -554,7 +579,7 @@ export default [
       { id: 3,
         name: "6.3 使用 PyTorch 的公司",
         value: "PyTorch 已成为最受欢迎的深度学习框架之一, 许多知名公司在各个行业中都使用它来进行 AI 和机器学习应用。以下是一些使用 PyTorch 的公司：",
-        image: "src/assets/chapter_zero/ptcompanies.jpeg",
+        image: pt_companies,
         content: [
           { id: 1, 
             title: "Tesla",
@@ -624,7 +649,7 @@ export default [
       { id: 0, 
         name: "8. 如何学习本课程?",
         value: "",
-        image: "src/assets/chapter_zero/takecourse.jpeg",
+        image: how_take_course,
         content: [
           { id: 1, 
             title: "从头到尾观看所有课程",

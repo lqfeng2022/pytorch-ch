@@ -1,3 +1,44 @@
+import {
+  tensor_what, 
+  tensor_create,
+  tensor_create_random,
+  tensor_create_zerosOnes,
+  tensor_create_range,
+  tensor_create_likes,
+  tensor_attrib,
+  tensor_attrib_shape,
+  tensor_oper,
+  tensor_oper_addsub,
+  tensor_oper_matmul,
+  tensor_oper_matmul_work,
+  tensor_oper_matmul_rules,
+  tensor_oper_matmul_webs,
+  tensor_oper_matmul_dot,
+  tensor_oper_matmul_dot_mha,
+  tensor_oper_aggreg,
+  tensor_manipul,
+  tensor_manipul_shape,
+  tensor_manipul_shape_t,
+  tensor_manipul_shape_perm,
+  tensor_manipul_shape_reshape,
+  tensor_manipul_dtype,
+  tensor_manipul_concat_stack, 
+  tensor_manipul_stack,
+  tensor_manipul_concat_v, 
+  tensor_manipul_concat_h, 
+  tensor_index_basic,
+  tensor_index_slice_boolean,
+  randomness, 
+  randomness_features,
+  pseudorandomness_features, 
+  random_seed,
+  gpu_run,
+  gpu_features, 
+  gpu_cuda_whats, 
+  gpu_cuda_features, 
+  gpu_gets,
+} from '../assets/chapter_one'
+
 export default [
   { id: 1, 
     name: "TENSORs ?",
@@ -16,7 +57,7 @@ export default [
       { id: 2,
         name: ":: 标量, 向量, 矩阵, 张量", 
         value: "",
-        image: "src/assets/chapter_one/tensors.jpeg",
+        image: tensor_what,
         content: [
           { id: 1, 
             title: "标量",
@@ -44,7 +85,7 @@ export default [
       { id: 1,
         name: "2. 创建张量", 
         value: "",
-        image: "src/assets/chapter_one/create.jpeg",
+        image: tensor_create,
         content: [
           { id: 1, 
             title: "",
@@ -55,7 +96,7 @@ export default [
       { id: 2,
         name: "2.1 随机张量", 
         value: "",
-        image: "src/assets/chapter_one/create_random.jpeg",
+        image: tensor_create_random,
         content: [
           { id: 1, 
             title: "什么是随机张量？",
@@ -74,7 +115,7 @@ export default [
       { id: 3,
         name: "2.2 零张量 & 一张量", 
         value: "",
-        image: "src/assets/chapter_one/create_zerosOnes.jpeg",
+        image: tensor_create_zerosOnes,
         content: [
           { id: 1, 
             title: "什么是零张量和一张量？",
@@ -93,7 +134,7 @@ export default [
       { id: 4,
         name: "2.3 范围张量", 
         value: "",
-        image: "src/assets/chapter_one/create_range.jpeg",
+        image: tensor_create_range,
         content: [
           { id: 1, 
             title: "什么是范围张量？",
@@ -112,7 +153,7 @@ export default [
       { id: 5,
         name: "2.4 类似张量", 
         value: "",
-        image: "src/assets/chapter_one/create_like.jpeg",
+        image: tensor_create_likes,
         content: [
           { id: 1, 
             title: "",
@@ -128,7 +169,7 @@ export default [
       { id: 0,
         name: "3. 张量的四大属性", 
         value: "在 PyTorch 中, 张量有几个重要的属性, 它们可以提供有关张量结构、数据类型以及存储位置(CPU 或 GPU) 的信息。你经常会使用的主要属性有 'shape' (形状) 、 'ndim' (维度) 、 'dtype' (数据类型) 和  'device' (设备) 。以下是每个属性的简要概述:",
-        image: "src/assets/chapter_one/attributes.jpeg",
+        image: tensor_attrib,
         content: [
           { id: 1, 
             title: "形状 (shape)",
@@ -151,7 +192,7 @@ export default [
       { id: 1,
         name: ":: 一个例子", 
         value: "",
-        image: "src/assets/chapter_one/attributes_shape.jpeg",
+        image: tensor_attrib_shape,
         content: [
           { id: 1, 
             title: "",
@@ -171,7 +212,7 @@ export default [
       { id: 1,
         name: "4. 张量运算", 
         value: "",
-        image: "src/assets/chapter_one/operats.jpeg",
+        image: tensor_oper,
         content: [
           { id: 1, 
             title: "",
@@ -182,7 +223,7 @@ export default [
       { id: 2,
         name: "4.1 基本运算", 
         value: "",
-        image: "src/assets/chapter_one/operats_addsub.jpeg",
+        image: tensor_oper_addsub,
         content: [
           { id: 1, 
             title: "",
@@ -193,7 +234,7 @@ export default [
       { id: 3,
         name: "4.2 矩阵乘法", 
         value: "",
-        image: "src/assets/chapter_one/operats_matmul.jpeg",
+        image: tensor_oper_matmul,
         content: [
           { id: 1, 
             title: "",
@@ -208,7 +249,7 @@ export default [
       { id: 4,
         name: ":: 如何运作", 
         value: "",
-        image: "src/assets/chapter_one/operats_matmul_work.jpeg",
+        image: tensor_oper_matmul_work,
         content: [
           { id: 1, 
             title: "",
@@ -219,7 +260,7 @@ export default [
       { id: 5,
         name: ":: 两个规则", 
         value: "",
-        image: "src/assets/chapter_one/operats_matmul_rules.jpeg",
+        image: tensor_oper_matmul_rules,
         content: [
           { id: 1, 
             title: "",
@@ -230,7 +271,7 @@ export default [
       { id: 6,
         name: ":: 矩阵乘法学习网站", 
         value: "如果你想深入了解矩阵乘法, 我推荐查看以下两个网站。它们提供了有价值的见解, 可以增强你对矩阵乘法和点积的理解。",
-        image: "src/assets/chapter_one/operats_matmul_webs.jpeg",
+        image: tensor_oper_matmul_webs,
         content: [
           { id: 1, 
             title: "mathisfun.com",
@@ -245,7 +286,7 @@ export default [
       { id: 7,
         name: ":: 点积", 
         value: "",
-        image: "src/assets/chapter_one/operats_matmul_dot.jpeg",
+        image: tensor_oper_matmul_dot,
         content: [
           { id: 1, 
             title: "",
@@ -256,7 +297,7 @@ export default [
       { id: 8,
         name: ":: Transformer 中的点积", 
         value: "点积是 Transformer 架构中的一个基本操作, 使模型能够有效地权衡输入的不同部分的重要程度, 这也是它在翻译、摘要等任务中变得如此强大的原因。",
-        image: "src/assets/chapter_one/operats_matmul_dot_mha.jpeg",
+        image: tensor_oper_matmul_dot_mha,
         content: [
           { id: 1, 
             title: "相似性测量",
@@ -275,7 +316,7 @@ export default [
       { id: 9,
         name: "4.3 聚合运算", 
         value: "聚合运算是指沿一个或多个维度减少张量的过程, 以生成一个较低秩 (rank) 的张量。聚合在深度学习中常用于总结或压缩张量中包含的信息, 使其更易于进一步处理。",
-        image: "src/assets/chapter_one/operats_aggregate.jpeg",
+        image: tensor_oper_aggreg,
         content: [
           { id: 1, 
             title: "max()/min()",
@@ -299,7 +340,7 @@ export default [
       { id: 1,
         name: "5. 张量操作", 
         value: "",
-        image: "src/assets/chapter_one/manipul.jpeg",
+        image: tensor_manipul,
         content: [
           { id: 1, 
             title: "",
@@ -314,7 +355,7 @@ export default [
       { id: 2,
         name: "5.1 张量重塑 (reshape)", 
         value: "",
-        image: "src/assets/chapter_one/manipul_shape.jpeg",
+        image: tensor_manipul_shape,
         content: [
           { id: 1, 
             title: "压缩或扩展张量",
@@ -337,7 +378,7 @@ export default [
       { id: 3,
         name: ":: 张量转置 (transpose)", 
         value: "在 PyTorch 中, 转置张量是指交换其两个维度。这个操作在数学计算中很常见, 特别是在线性代数中, 当需要交换矩阵的行和列时。但这不仅限于矩阵——你可以对任何张量进行转置, 无论它有多少维度。",
-        image: "src/assets/chapter_one/manipul_shape_trans.jpeg",
+        image: tensor_manipul_shape_t,
         content: [
           { id: 1, 
             title: "",
@@ -356,7 +397,7 @@ export default [
       { id: 4,
         name: ":: 张量转置 (permute)", 
         value: "",
-        image: "src/assets/chapter_one/manipul_shape_permute.jpeg",
+        image: tensor_manipul_shape_perm,
         content: [
           { id: 1, 
             title: "",
@@ -367,7 +408,7 @@ export default [
       { id: 5,
         name: ":: 张量重塑 (reshape)", 
         value: "",
-        image: "src/assets/chapter_one/manipul_shape_reshape.jpeg",
+        image: tensor_manipul_shape_reshape,
         content: [
           { id: 1, 
             title: "",
@@ -394,7 +435,7 @@ export default [
       { id: 6,
         name: "5.2 改变数据类型", 
         value: "PyTorch 张量可以轻松与 NumPy 数组交互, 使得在两者之间转换变得简单。这种无缝的互操作性在你希望利用 PyTorch 的功能和 NumPy 的优势时非常有用。以下是如何实现这种交互的方式：",
-        image: "src/assets/chapter_one/manipul_dtype.jpeg",
+        image: tensor_manipul_dtype,
         content: [
           { id: 0, 
             title: "",
@@ -417,7 +458,7 @@ export default [
       { id: 7,
         name: "5.3 张量连接和张量堆栈 (Concatenate | Stack)", 
         value: "",
-        image: "src/assets/chapter_one/manipul_catstack.jpeg",
+        image: tensor_manipul_concat_stack,
         content: [
           { id: 1, 
             title: "张量连接 (Concatenate)",
@@ -432,7 +473,7 @@ export default [
       { id: 8,
         name: ":: 张量堆栈 (Stack)", 
         value: "",
-        image: "src/assets/chapter_one/manipul_stack.jpeg",
+        image: tensor_manipul_stack,
         content: [
           { id: 1, 
             title: "",
@@ -447,7 +488,7 @@ export default [
       { id: 9,
         name: ":: 张量的垂直连接", 
         value: "",
-        image: "src/assets/chapter_one/manipul_shape_cat_vstack.jpeg",
+        image: tensor_manipul_concat_v,
         content: [
           { id: 1, 
             title: "",
@@ -462,7 +503,7 @@ export default [
       { id: 10,
         name: ":: 张量的水平连接", 
         value: "",
-        image: "src/assets/chapter_one/manipul_shape_cat_hstack.jpeg",
+        image: tensor_manipul_concat_h,
         content: [
           { id: 1, 
             title: "",
@@ -493,7 +534,7 @@ export default [
       { id: 2,
         name: "6.1 基本查找 (Basic Indexing)", 
         value: "",
-        image: "src/assets/chapter_one/indexing_one.jpeg",
+        image: tensor_index_basic,
         content: [
           { id: 1, 
             title: "单个元素",
@@ -508,7 +549,7 @@ export default [
       { id: 3,
         name: "6.2 分割和布尔查找 (Slice/Boolean Indexing)", 
         value: "",
-        image: "src/assets/chapter_one/indexing_two.jpeg",
+        image: tensor_index_slice_boolean,
         content: [
           { id: 1, 
             title: "分割查找",
@@ -558,7 +599,7 @@ export default [
       { id: 3, 
         name: ":: PyTorch 中的随机性",
         value: "",
-        image: "src/assets/chapter_one/randpy.jpeg", 
+        image: randomness, 
         content: [
           { id: 1, 
             title: "", 
@@ -573,7 +614,7 @@ export default [
       { id: 4, 
         name: ":: 随机性特征",
         value: "",
-        image: "src/assets/chapter_one/randfeat.jpeg", 
+        image: randomness_features, 
         content: [
           { id: 1, 
             title: "不可预测性", 
@@ -603,7 +644,7 @@ export default [
       { id: 6, 
         name: ":: PSEUDORANDOMNESS Features",
         value: "",
-        image: "src/assets/chapter_one/pseudorandf.jpeg", 
+        image: pseudorandomness_features, 
         content: [
           { id: 1, 
             title: "确定性", 
@@ -641,7 +682,7 @@ export default [
       { id: 8, 
         name: ":: PyTorch 中的随机种子",
         value: "",
-        image: "src/assets/chapter_one/randseedpy.jpeg", 
+        image: random_seed, 
         content: [
           { id: 1, 
             title: "设置随机种子为69", 
@@ -672,7 +713,7 @@ export default [
       { id: 2, 
         name: "8.1 在 GPU 上运行张量", 
         value: "要在 GPU 上运行 PyTorch 张量, 你需要将张量数据移动到 GPU, 然后使用 GPU 加速进行操作。这确实可以加快计算速度, 特别是在处理大型张量和深度学习模型时。", 
-        image: "src/assets/chapter_one/gpu_run.jpeg", 
+        image: gpu_run, 
         content: [
           { id: 1, 
             title: "", 
@@ -694,7 +735,7 @@ export default [
       { id: 4, 
         name: ":: GPU 特征",
         value: "",
-        image: "src/assets/chapter_one/gpu_feature.jpeg", 
+        image: gpu_features, 
         content: [
           { id: 1, 
             title: "并行处理", 
@@ -717,7 +758,7 @@ export default [
       { id: 5, 
         name: "8.3 CUDA",
         value: "",
-        image: "src/assets/chapter_one/gpu_cuda.jpg", 
+        image: gpu_cuda_whats, 
         content: [
           { id: 1, 
             title: "", 
@@ -728,7 +769,7 @@ export default [
       { id: 6, 
         name: ":: CUDA 特征",
         value: "", 
-        image: "src/assets/chapter_one/gpu_cuda_feature.jpeg", 
+        image: gpu_cuda_features, 
         content: [
           { id: 1, 
             title: "并行计算框架", 
@@ -751,7 +792,7 @@ export default [
       { id: 7, 
         name: "8.4 获取 GPUs",
         value: "",
-        image: "src/assets/chapter_one/gpu_get.jpeg", 
+        image: gpu_gets, 
         content: [
           { id: 1, 
             title: "检查你的本地计算机是否有 GPU", 

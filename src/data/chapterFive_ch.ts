@@ -1,3 +1,16 @@
+import {
+  classification, 
+  classification_linear,
+  classification_nonlinear,
+  binary_cross_entropy,
+  sigmoid_formula,
+  sigmoid_features,
+  backpropagate_forward,
+  backpropagation_backward,
+  relu_formula,
+  relu_features
+} from '../assets/chapter_five'
+
 export default [
   { id: 0, 
     name: "Classification Problem",
@@ -20,7 +33,7 @@ export default [
       { id: 1,
         name: "1.1 分类问题", 
         value: "",
-        image: "src/assets/chapter_five/classific.jpeg",
+        image: classification,
         content: [
           { id: 1, 
             title: "二元分类",
@@ -62,7 +75,7 @@ export default [
       { id: 3,
         name: ":: 线性关系", 
         value: "",
-        image: "src/assets/chapter_five/classific_linear.jpeg",
+        image: classification_linear,
         content: [
           { id: 1, 
             title: "",
@@ -81,7 +94,7 @@ export default [
       { id: 4,
         name: ":: 非线性关系", 
         value: "",
-        image: "src/assets/chapter_five/classific_nonlinear.jpeg",
+        image: classification_nonlinear,
         content: [
           { id: 1, 
             title: "",
@@ -120,7 +133,7 @@ export default [
       { id: 1,
         name: ":: BCE 损失函数方程", 
         value: "",
-        image: "src/assets/chapter_five/bceFormula.jpeg",
+        image: binary_cross_entropy,
         content: [
           { id: 1, 
             title: "",
@@ -185,7 +198,7 @@ export default [
       { id: 1,
         name: ":: Sigmoid 函数公式", 
         value: "",
-        image: "src/assets/chapter_five/sigmoidFormula.jpeg",
+        image: sigmoid_formula,
         content: [
           { id: 1, 
             title: "S 形曲线",
@@ -208,7 +221,7 @@ export default [
       { id: 2,
         name: ":: Sigmoid 函数的特性", 
         value: "",
-        image: "src/assets/chapter_five/sigmoidFeature.jpeg",
+        image: sigmoid_features,
         content: [
           { id: 1, 
             title: "概率输出",
@@ -247,7 +260,7 @@ export default [
       { id: 1,
         name: ":: ReLU 函数方程", 
         value: "",
-        image: "src/assets/chapter_five/reluFormula.jpeg",
+        image: relu_formula,
         content: [
           { id: 1, 
             title: "",
@@ -262,7 +275,7 @@ export default [
       { id: 2,
         name: ":: ReLU 函数特性", 
         value: "",
-        image: "src/assets/chapter_five/reluFeature.jpeg",
+        image: relu_features,
         content: [
           { id: 1, 
             title: "非线性",
@@ -313,7 +326,7 @@ export default [
       { id: 1,
         name: ":: 前向传播:",
         value: "",
-        image: "src/assets/chapter_five/backpropagat_implem.jpeg",
+        image: backpropagate_forward,
         content: [
           { id: 0, 
             title: "",
@@ -324,7 +337,7 @@ export default [
       { id: 2,
         name: ":: 反向传播:",
         value: "",
-        image: "src/assets/chapter_five/backpropagat_calcul.jpeg",
+        image: backpropagation_backward,
         content: [
           { id: 0, 
             title: "",

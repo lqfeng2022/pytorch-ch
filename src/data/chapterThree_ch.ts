@@ -1,3 +1,24 @@
+import {
+  linear,
+  distribut_pdf,
+  distribut_cdf,
+  loss_mse_one,
+  loss_mse_two,
+  loss_curves,
+  gd_one,
+  gd_one_mse,
+  gd_one_table,
+  gd_two,
+  gd_two_table,
+  sgd_vs_gd_table,
+  sgd_vs_gd_image,
+  lr,
+  lr_low,
+  lr_high,
+  lr_right
+} from '../assets/chapter_three'
+import { coverThree } from '../assets/covers'
+
 export default [
   { id: 0, 
     name: "Linear Regression",
@@ -20,7 +41,7 @@ export default [
       { id: 2,
         name: ":: 线性关系", 
         value: "",
-        image: "src/assets/chapter_three/linear.jpeg",
+        image: linear,
         content: [
           { id: 1, 
             title: "",
@@ -51,7 +72,7 @@ export default [
       { id: 2,
         name: "2.1 概率密度函数 (PDF)", 
         value: "让我们了解下概率密度函数, 即 PDF, 当我门说到正态分布时, 一般指的就是它。我们不需要去记住其公式, 记住其形状, 理解参数是如何影响其形状和位置的就可以了。",
-        image: "src/assets/chapter_three/ndistrib_pdf.jpeg",
+        image: distribut_pdf,
         content: [
           { id: 1, 
             title: "钟形曲线:",
@@ -78,7 +99,7 @@ export default [
       { id: 3,
         name: "2.2 累积分布函数 (CDF)", 
         value: "累积分布函数 (CDF) 可以通过 PDF曲线 下方特定点(我们称之为 x) 左侧的阴影区域来可视化。它表示随机变量 X 取值小于或等于 x 的概率。",
-        image: "src/assets/chapter_three/ndistrib_cdf.jpeg",
+        image: distribut_cdf,
         content: [
           { id: 1, 
             title: "S形曲线:",
@@ -140,7 +161,7 @@ export default [
       { id: 3,
         name: ":: MSE实例 (第1部分) ",
         value: "",
-        image: "src/assets/chapter_three/mse_one.jpeg",
+        image: loss_mse_one,
         content: [
           { id: 1,
             title: "",
@@ -151,7 +172,7 @@ export default [
       { id: 4,
         name: ":: MSE实例 (第2部分) ",
         value: "",
-        image: "src/assets/chapter_three/mse_two.jpeg",
+        image: loss_mse_two,
         content: [
           { id: 1,
             title: "MSE计算:",
@@ -181,7 +202,7 @@ export default [
       { id: 6,
         name: ":: 三种损失曲线",
         value: "",
-        image: "src/assets/chapter_three/losscurves.jpg",
+        image: loss_curves,
         content: [
           { id: 1,
             title: "欠拟合(Underfitting) :",
@@ -216,7 +237,7 @@ export default [
       { id: 2,
         name: "4.1 梯度下降实例 1 ",
         value: "",
-        image: "src/assets/chapter_three/gd_one.jpeg",
+        image: gd_one,
         content: [
           { id: 0,
             title: "",
@@ -239,7 +260,7 @@ export default [
       { id: 3,
         name: ":: 梯度下降实例 1 (计算过程)",
         value: "",
-        image: "src/assets/chapter_three/gd_one_table.jpeg",
+        image: gd_one_table,
         content: [
           { id: 1,
             title: "",
@@ -250,7 +271,7 @@ export default [
       { id: 4,
         name: ":: 梯度下降实例 1 (MSE梯度变化)",
         value: "",
-        image: "src/assets/chapter_three/gd_one_mse.jpeg",
+        image: gd_one_mse,
         content: [
           { id: 1,
             title: "MSE曲线",
@@ -265,7 +286,7 @@ export default [
       { id: 5,
         name: "4.2 梯度下降实例 2",
         value: "这张图生动地展现了两个参数下的梯度下降过程。通过3D曲面图, 我们可以直观地看到模型如何像在崎岖的山谷中寻找下坡的路径, 一步步朝着误差最小的方向前进。",
-        image: "src/assets/gradient_descent.jpeg",
+        image: coverThree,
         content: [
           { id: 1,
             title: "损失函数曲面图:",
@@ -288,7 +309,7 @@ export default [
       { id: 6,
         name: ":: 梯度下降实例 2 (计算过程)",
         value: "",
-        image: "src/assets/chapter_three/gd_two_table.jpeg",
+        image: gd_two_table,
         content: [
           { id: 1,
             title: "",
@@ -303,7 +324,7 @@ export default [
       { id: 7,
         name: ":: 梯度下降实例 2 (模型迭代)",
         value: "",
-        image: "src/assets/chapter_three/gd_two.jpeg",
+        image: gd_two,
         content: [
           { id: 1,
             title: "",
@@ -346,7 +367,7 @@ export default [
       { id: 1,
         name: ":: 随机梯度下降与梯度下降 (part.1)",
         value: "",
-        image: "src/assets/chapter_three/sgd_one.jpeg",
+        image: sgd_vs_gd_table,
         content: [
           { id: 1,
             title: "大数据集",
@@ -377,7 +398,7 @@ export default [
       { id: 2,
         name: ":: 随机梯度下降与梯度下降 (part.2)",
         value: "这幅图清晰地展示了梯度下降 (GD) 和随机梯度下降 (SGD) 在模型训练中的差异。",
-        image: "src/assets/chapter_three/sgd_two.jpeg",
+        image: sgd_vs_gd_image,
         content: [
           { id: 1,
             title: "梯度下降(GD) :",
@@ -412,7 +433,7 @@ export default [
       { id: 1,
         name: ":: 学习率曲线",
         value: "这张图展示了学习率与损失函数之间的关系, 以下是总结：",
-        image: "src/assets/chapter_three/lr.jpeg",
+        image: lr,
         content: [
           { id: 1,
             title: "平坦区域:",
@@ -435,7 +456,7 @@ export default [
       { id: 2,
         name: ":: 学习率过低 (lr=0.05)",
         value: "",
-        image: "src/assets/chapter_three/lr_low.jpeg",
+        image: lr_low,
         content: [
           { id: 1,
             title: "",
@@ -446,7 +467,7 @@ export default [
       { id: 3,
         name: ":: 学习率过高 (lr=0.8)",
         value: "",
-        image: "src/assets/chapter_three/lr_high.jpeg",
+        image: lr_high,
         content: [
           { id: 1,
             title: "",
@@ -457,7 +478,7 @@ export default [
       { id: 4,
         name: ":: 学习率刚刚好 (lr=0.2)",
         value: "",
-        image: "src/assets/chapter_three/lr_right.jpeg",
+        image: lr_right,
         content: [
           { id: 1,
             title: "",

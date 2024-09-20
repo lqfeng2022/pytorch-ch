@@ -1,3 +1,31 @@
+import {
+  prepare_create,
+  prepare_split,
+  prepare_visual,
+  build_architecture,
+  build_model,
+  train_model,
+  train_visual,
+  train_loss,
+  improve_model,
+  improve_one,
+  improve_one_architec,
+  improve_one_build,
+  improve_one_test,
+  improve_one_loss,
+  improve_two,
+  improve_two_build,
+  improve_two_test,
+  improve_two_loss,
+  improve_three,
+  improve_three_build,
+  improve_three_test,
+  improve_three_loss,
+  save_choose,
+  save_model_3,
+  save_load_model_3
+} from '../assets/chapter_four'
+
 export default [
   { id: 0, 
     name: "Prepare DATA",
@@ -12,7 +40,7 @@ export default [
       { id: 1, 
         name: ":: Create DATA", 
         value: "",
-        image: "src/assets/chapter_four/prepare_create.jpeg",
+        image: prepare_create,
         content: [
           { id: 1,
             title: "",
@@ -23,7 +51,7 @@ export default [
       { id: 2, 
         name: ":: Split DATA", 
         value: "",
-        image: "src/assets/chapter_four/prepare_split.jpeg",
+        image: prepare_split,
         content: [
           { id: 1,
             title: "",
@@ -34,7 +62,7 @@ export default [
       { id: 3, 
         name: ":: Visualize DATA", 
         value: "",
-        image: "src/assets/chapter_four/prepare_visual.png",
+        image: prepare_visual,
         content: [
           { id: 1,
             title: "",
@@ -61,7 +89,7 @@ export default [
       { id: 1, 
         name: ":: 设计模型架构", 
         value: "",
-        image: "src/assets/chapter_four/build_architecture.jpeg",
+        image: build_architecture,
         content: [
           { id: 1,
             title: "",
@@ -72,7 +100,7 @@ export default [
       { id: 2, 
         name: ":: 使用 PyTorch 实现模型架构", 
         value: "",
-        image: "src/assets/chapter_four/build_model.jpeg",
+        image: build_model,
         content: [
           { id: 1,
             title: "",
@@ -103,7 +131,7 @@ export default [
       { id: 1, 
         name: ":: 构建模型训练循环", 
         value: "",
-        image: "src/assets/chapter_four/train_model.jpeg",
+        image: train_model,
         content: [
           { id: 0,
             title: "",
@@ -122,7 +150,7 @@ export default [
       { id: 2, 
         name: ":: 评估模型训练效果", 
         value: "",
-        image: "src/assets/chapter_four/train_visual.jpeg",
+        image: train_visual,
         content: [
           { id: 1,
             title: "",
@@ -137,7 +165,7 @@ export default [
       { id: 3, 
         name: ":: 确认损失曲线", 
         value: "",
-        image: "src/assets/chapter_four/train_loss.jpeg",
+        image: train_loss,
         content: [
           { id: 1,
             title: "",
@@ -168,7 +196,7 @@ export default [
       { id: 1, 
         name: ":: 如何改进一个模型", 
         value: "",
-        image: "src/assets/chapter_four/improve_model.jpeg",
+        image: improve_model,
         content: [
           { id: 0,
             title: "",
@@ -192,7 +220,7 @@ export default [
       { id: 0, 
         name: "5. 第一个改进模型 (+ReLU)", 
         value: "",
-        image: "src/assets/chapter_four/improve_one.jpeg",
+        image: improve_one,
         content: [
           { id: 1,
             title: "",
@@ -203,7 +231,7 @@ export default [
       { id: 1, 
         name: ":: 设计模型架构", 
         value: "",
-        image: "src/assets/chapter_four/improve_one_architec.jpeg",
+        image: improve_one_architec,
         content: [
           { id: 1,
             title: "",
@@ -214,7 +242,7 @@ export default [
       { id: 2, 
         name: ":: 构建和训练模型", 
         value: "",
-        image: "src/assets/chapter_four/improve_one_build.jpeg",
+        image: improve_one_build,
         content: [
           { id: 1,
             title: "",
@@ -225,7 +253,7 @@ export default [
       { id: 3, 
         name: ":: 评估模型", 
         value: "",
-        image: "src/assets/chapter_four/improve_one_test.png",
+        image: improve_one_test,
         content: [
           { id: 1,
             title: "",
@@ -236,7 +264,7 @@ export default [
       { id: 4, 
         name: ":: 查看损失曲线", 
         value: "",
-        image: "src/assets/chapter_four/improve_one_loss.png",
+        image: improve_one_loss,
         content: [
           { id: 1,
             title: "",
@@ -256,7 +284,7 @@ export default [
       { id: 0, 
         name: "6. 第二个改进模型 (+epochs)", 
         value: "",
-        image: "src/assets/chapter_four/improve_two.jpeg",
+        image: improve_two,
         content: [
           { id: 1,
             title: "",
@@ -267,7 +295,7 @@ export default [
       { id: 1, 
         name: ":: 构建和训练模型", 
         value: "",
-        image: "src/assets/chapter_four/improve_two_build.jpeg",
+        image: improve_two_build,
         content: [
           { id: 1,
             title: "",
@@ -282,7 +310,7 @@ export default [
       { id: 2, 
         name: ":: 评估模型", 
         value: "",
-        image: "src/assets/chapter_four/improve_two_test.png",
+        image: improve_two_test,
         content: [
           { id: 1,
             title: "",
@@ -293,7 +321,7 @@ export default [
       { id: 3, 
         name: ":: 查看损失曲线", 
         value: "",
-        image: "src/assets/chapter_four/improve_two_loss.png",
+        image: improve_two_loss,
         content: [
           { id: 1,
             title: "",
@@ -309,7 +337,7 @@ export default [
       { id: 0, 
         name: "7. 第三个改进模型 (->lr)", 
         value: "",
-        image: "src/assets/chapter_four/improve_three.jpeg",
+        image: improve_three,
         content: [
           { id: 1,
             title: "",
@@ -320,7 +348,7 @@ export default [
       { id: 1, 
         name: ":: 构建和训练模型", 
         value: "",
-        image: "src/assets/chapter_four/improve_three_build.jpeg",
+        image: improve_three_build,
         content: [
           { id: 1,
             title: "",
@@ -331,7 +359,7 @@ export default [
       { id: 2, 
         name: ":: 评估模型", 
         value: "",
-        image: "src/assets/chapter_four/improve_three_test.png",
+        image: improve_three_test,
         content: [
           { id: 1,
             title: "",
@@ -342,7 +370,7 @@ export default [
       { id: 3, 
         name: ":: 查看损失曲线", 
         value: "",
-        image: "src/assets/chapter_four/improve_three_loss.png",
+        image: improve_three_loss,
         content: [
           { id: 1,
             title: "",
@@ -369,7 +397,7 @@ export default [
       { id: 1, 
         name: "5.0 选择一个最好的模型", 
         value: "",
-        image: "src/assets/chapter_four/save_choose.png",
+        image: save_choose,
         content: [
           { id: 1,
             title: "",
@@ -380,7 +408,7 @@ export default [
       { id: 2, 
         name: "5.1 保存模型", 
         value: "",
-        image: "src/assets/chapter_four/save_model_3.jpeg",
+        image: save_model_3,
         content: [
           { id: 1,
             title: "",
@@ -391,7 +419,7 @@ export default [
       { id: 3, 
         name: "5.2 下载模型参数", 
         value: "",
-        image: "src/assets/chapter_four/save_load_model_3.jpeg",
+        image: save_load_model_3,
         content: [
           { id: 1,
             title: "",
