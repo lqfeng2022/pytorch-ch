@@ -25,7 +25,17 @@ const NavBar = () => {
             AI &nbsp;<Text as='span' fontWeight='thin'>WITH</Text> &nbsp;PYTORCH
           </Text>
         </Link>
-        <Text as='b' fontSize='xl' color='gray.500' fontWeight='light'>李 形状</Text>
+        <Link to='https://simonlee88.netlify.app' target='_blank'>
+          <Text 
+            as='b' 
+            fontSize='xl' 
+            color='gray.500' 
+            fontWeight='light'
+            _hover={{ color: 'tomato' }}
+          >
+            李 形状
+          </Text>
+        </Link>
       </HStack>
     </Container>
   );
